@@ -1,0 +1,66 @@
+name: RSS 수집 및 필터링
+
+on:
+  schedule:
+    # ── 평일 (KST → UTC 변환) ──
+    # 08시 KST = 23시 UTC (전날) → 월~금 = 일~목
+    - cron: '0 23 * * 0-4'
+    # 10시 KST = 01시 UTC
+    - cron: '0 1 * * 1-5'
+    # 12시 KST = 03시 UTC
+    - cron: '0 3 * * 1-5'
+    # 14시 KST = 05시 UTC
+    - cron: '0 5 * * 1-5'
+    # 16시 KST = 07시 UTC
+    - cron: '0 7 * * 1-5'
+    # 20시 KST = 11시 UTC
+    - cron: '0 11 * * 1-5'
+
+    # ── 주말 ──
+    # 토요일 09시 KST = 토요일 00시 UTC
+    # 일요일 09시 KST = 일요일 00시 UTC
+    - cron: '0 0 * * 6,0'
+    # 토요일 15시 KST = 토요일 06시 UTC
+    # 일요일 15시 KST = 일요일 06시 UTC
+    - cron: '0 6 * * 6,0'
+
+  # 수동 실행 가능
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: RSS 수집 및 필터링
+        run: python scripts/collect_and_filter.py
+
+      - name: 변경사항 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"
+          else
+            TIMESTAMP=$(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M KST')
+            PENDING_COUNT=$(python -c "import json; d=json.load(open('data/pending.json')); print(len(d.get('items',[])))" 2>/dev/null || echo "0")
+            git commit -m "RSS 수집: ${TIMESTAMP} (대기 ${PENDING_COUNT}건)"
+            git push
+          fi
