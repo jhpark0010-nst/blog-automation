@@ -16,33 +16,28 @@ PUBLISHED_PATH = DATA_DIR / "published.json"     # 발행 완료 로그
 
 # ── RSS 피드 소스 ──
 RSS_FEEDS = {
-    # 정부 정책 (priority 1: 기본 통과)
-    "정책브리핑": {
+    # ── 정부 정책 (priority 1: 기본 통과) ──
+    "정책브리핑_정책뉴스": {
         "url": "https://www.korea.kr/rss/policy.xml",
         "category": "정책",
         "priority": 1,
     },
-    "복지부": {
-        "url": "https://www.mohw.go.kr/rsm/rss/rss.jsp",
-        "category": "복지",
+    "정책브리핑_보도자료": {
+        "url": "https://www.korea.kr/rss/pressrelease.xml",
+        "category": "정책",
         "priority": 1,
     },
-    "국토교통부": {
-        "url": "https://www.molit.go.kr/rss/rss.jsp",
+    "국토교통부_보도": {
+        "url": "https://www.molit.go.kr/dev/board/board_rss.jsp?rss_id=NEWS",
         "category": "교통/주거",
         "priority": 1,
     },
-    "기획재정부": {
-        "url": "https://www.moef.go.kr/rss/rss.jsp",
-        "category": "경제",
+    "국토교통부_공지": {
+        "url": "https://www.molit.go.kr/dev/board/board_rss.jsp?rss_id=N01_B",
+        "category": "교통/주거",
         "priority": 1,
     },
-    "고용노동부": {
-        "url": "https://www.moel.go.kr/rss/rss.jsp",
-        "category": "고용",
-        "priority": 1,
-    },
-    # 연합뉴스 (priority 2: 키워드 매칭 필요)
+    # ── 연합뉴스 (priority 2: 키워드 매칭 필요) ──
     "연합뉴스_정치": {
         "url": "https://www.yna.co.kr/rss/politics.xml",
         "category": "정치",
@@ -56,11 +51,6 @@ RSS_FEEDS = {
     "연합뉴스_사회": {
         "url": "https://www.yna.co.kr/rss/society.xml",
         "category": "사회",
-        "priority": 2,
-    },
-    "연합뉴스_생활": {
-        "url": "https://www.yna.co.kr/rss/life.xml",
-        "category": "생활",
         "priority": 2,
     },
 }

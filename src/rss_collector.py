@@ -12,6 +12,8 @@ import feedparser
 import requests
 from bs4 import BeautifulSoup
 
+BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
 from config.settings import RSS_FEEDS
 
 logger = logging.getLogger(__name__)
@@ -47,9 +49,7 @@ def generate_guid(entry: dict, source: str) -> str:
 def fetch_full_content(url: str) -> str | None:
     """원문 링크에서 본문 스크래핑"""
     try:
-        resp = requests.get(url, timeout=15, headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-        })
+        resp = requests.get(url, timeout=15, headers={"User-Agent": BROWSER_UA})
         resp.raise_for_status()
         resp.encoding = resp.apparent_encoding
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -88,7 +88,15 @@ def collect_all_feeds(processed_guids: set) -> list[dict]:
         logger.info(f"[수집] {name} ({url})")
 
         try:
-            feed = feedparser.parse(url)
+            # requests로 먼저 받고 feedparser로 파싱 (정부 사이트 호환)
+            try:
+                resp = requests.get(url, headers={"User-Agent": BROWSER_UA}, timeout=15)
+                resp.raise_for_status()
+                feed = feedparser.parse(resp.content)
+            except requests.RequestException as e:
+                logger.error(f"[수집] {name} HTTP 요청 실패: {e}")
+                continue
+
             if feed.bozo and not feed.entries:
                 logger.error(f"[수집] {name} 파싱 실패: {feed.bozo_exception}")
                 continue
