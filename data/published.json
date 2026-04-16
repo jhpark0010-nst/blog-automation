@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "post_id": 7,
+    "wp_url": "https://publickorea.org/?p=7",
+    "title": "반값여행 신청 방법 총정리 – 여행비 50% 환급받는 법",
+    "category": "생활/관광",
+    "score": 92,
+    "score_detail": {
+      "실익": 38,
+      "검색": 28,
+      "희소": 17,
+      "시의": 9
+    },
+    "review": "통과",
+    "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962566&call_from=rsslink",
+    "published_at": "2026-04-16T08:19:32.481958+00:00"
+  },
+  {
+    "post_id": 8,
+    "wp_url": "https://publickorea.org/?p=8",
+    "title": "봄·가을 주말 전기요금 50% 할인 – 4월 16일부터 바로 적용",
+    "category": "생활/에너지",
+    "score": 91,
+    "score_detail": {
+      "실익": 35,
+      "검색": 28,
+      "희소": 18,
+      "시의": 10
+    },
+    "review": "통과",
+    "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962675&call_from=rsslink",
+    "published_at": "2026-04-16T08:19:32.481958+00:00"
+  },
+  {
+    "post_id": 9,
+    "wp_url": "https://publickorea.org/?p=9",
+    "title": "KTX·SRT 중련운행 5월 15일 시작 – 좌석 2배, 요금 10% 할인",
+    "category": "교통/생활",
+    "score": 83,
+    "score_detail": {
+      "실익": 30,
+      "검색": 28,
+      "희소": 15,
+      "시의": 10
+    },
+    "review": "통과",
+    "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148962678&call_from=rsslink",
+    "published_at": "2026-04-16T08:19:32.481958+00:00"
+  }
+]
