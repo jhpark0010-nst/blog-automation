@@ -21,9 +21,29 @@ PUBLISHED_DIR = DRAFTS_DIR / "published"
 PUBLISHED_DIR.mkdir(parents=True, exist_ok=True)
 
 DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}-")
+COMMENT_META_RE = re.compile(r"<!--(.*?)-->", re.DOTALL)
+
+
+def _parse_comment_meta(html: str) -> dict[str, str]:
+    """HTML 상단 주석에서 'Title: ...', 'Meta: ...' 등 메타데이터 추출"""
+    m = COMMENT_META_RE.search(html)
+    if not m:
+        return {}
+    meta = {}
+    for line in m.group(1).splitlines():
+        if ":" in line:
+            k, _, v = line.partition(":")
+            k = k.strip()
+            v = v.strip()
+            if k and v:
+                meta[k.lower()] = v
+    return meta
 
 
 def extract_title(html: str, filename: str) -> str:
+    meta = _parse_comment_meta(html)
+    if t := meta.get("title"):
+        return t
     soup = BeautifulSoup(html, "html.parser")
     if (t := soup.find("title")) and t.get_text(strip=True):
         return t.get_text(strip=True)
@@ -33,6 +53,9 @@ def extract_title(html: str, filename: str) -> str:
 
 
 def extract_meta_desc(html: str) -> str:
+    meta = _parse_comment_meta(html)
+    if m := meta.get("meta"):
+        return m
     soup = BeautifulSoup(html, "html.parser")
     m = soup.find("meta", attrs={"name": "description"})
     if m and m.get("content"):
