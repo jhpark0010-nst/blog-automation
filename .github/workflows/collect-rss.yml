@@ -2,27 +2,13 @@ name: RSS 수집 및 필터링
 
 on:
   schedule:
-    # ── 평일 (KST → UTC 변환) ──
-    # 08시 KST = 23시 UTC (전날) → 월~금 = 일~목
-    - cron: '0 23 * * 0-4'
-    # 10시 KST = 01시 UTC
-    - cron: '0 1 * * 1-5'
-    # 12시 KST = 03시 UTC
-    - cron: '0 3 * * 1-5'
-    # 14시 KST = 05시 UTC
-    - cron: '0 5 * * 1-5'
-    # 16시 KST = 07시 UTC
-    - cron: '0 7 * * 1-5'
-    # 20시 KST = 11시 UTC
-    - cron: '0 11 * * 1-5'
-
-    # ── 주말 ──
-    # 토요일 09시 KST = 토요일 00시 UTC
-    # 일요일 09시 KST = 일요일 00시 UTC
-    - cron: '0 0 * * 6,0'
-    # 토요일 15시 KST = 토요일 06시 UTC
-    # 일요일 15시 KST = 일요일 06시 UTC
-    - cron: '0 6 * * 6,0'
+    # ── 매일 6회 (KST → UTC 변환) ──
+    - cron: '0 23 * * *'   # KST 08시
+    - cron: '0 1 * * *'    # KST 10시
+    - cron: '0 3 * * *'    # KST 12시
+    - cron: '0 5 * * *'    # KST 14시
+    - cron: '0 7 * * *'    # KST 16시
+    - cron: '0 11 * * *'   # KST 20시
 
   # 수동 실행 가능
   workflow_dispatch:
