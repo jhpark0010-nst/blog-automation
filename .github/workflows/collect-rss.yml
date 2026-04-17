@@ -1,17 +1,8 @@
 name: RSS 수집 및 필터링
 
 on:
-  schedule:
-    # ── 매일 6회 (KST → UTC 변환) ──
-    # :03 분 사용 (GitHub Actions의 :00 정각 스킵 회피)
-    - cron: '3 23 * * *'   # KST 08:03
-    - cron: '3 1 * * *'    # KST 10:03
-    - cron: '3 3 * * *'    # KST 12:03
-    - cron: '3 5 * * *'    # KST 14:03
-    - cron: '3 7 * * *'    # KST 16:03
-    - cron: '3 11 * * *'   # KST 20:03
-
-  # 수동 실행 가능
+  # 스케줄링은 외부(cron-job.org)에서 workflow_dispatch API 호출로 관리
+  # GitHub Actions schedule은 이 repo에서 실행이 불안정해 제거됨 (2026-04-17)
   workflow_dispatch:
 
 permissions:
