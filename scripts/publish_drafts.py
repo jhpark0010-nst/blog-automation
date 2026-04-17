@@ -64,9 +64,18 @@ def extract_meta_desc(html: str) -> str:
     return p.get_text(strip=True)[:150] if p else ""
 
 
-def publish_to_wp(title: str, content: str, meta_desc: str):
+def extract_slug(html: str, filename: str) -> str:
+    """주석의 Slug 필드 우선, 없으면 파일명에서 날짜 prefix(YYYY-MM-DD-) 제거"""
+    meta = _parse_comment_meta(html)
+    if s := meta.get("slug"):
+        return s.lower().strip()
+    stem = filename.removesuffix(".html")
+    return DATE_PATTERN.sub("", stem).lower()
+
+
+def publish_to_wp(title: str, content: str, meta_desc: str, slug: str):
     auth = base64.b64encode(f"{WP_USERNAME}:{WP_APP_PASSWORD}".encode()).decode()
-    payload = {"title": title, "content": content, "status": "draft"}
+    payload = {"title": title, "content": content, "status": "draft", "slug": slug}
     if meta_desc:
         payload["meta"] = {"yoast_wpseo_metadesc": meta_desc}
     resp = requests.post(
@@ -104,8 +113,9 @@ def main() -> int:
         html = path.read_text(encoding="utf-8")
         title = extract_title(html, path.name)
         meta_desc = extract_meta_desc(html)
+        slug = extract_slug(html, path.name)
         try:
-            post_id, link = publish_to_wp(title, html, meta_desc)
+            post_id, link = publish_to_wp(title, html, meta_desc, slug)
             dest = PUBLISHED_DIR / path.name
             shutil.move(str(path), str(dest))
             success.append({"title": title, "link": link, "file": path.name})
