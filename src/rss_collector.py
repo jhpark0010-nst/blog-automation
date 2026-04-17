@@ -46,6 +46,41 @@ def generate_guid(entry: dict, source: str) -> str:
     return hashlib.sha256(raw).hexdigest()
 
 
+def extract_thumbnail_url(entry) -> str | None:
+    """RSS entry에서 이미지 URL 추출 (외부 API 호출 없이)"""
+    mc = entry.get("media_content")
+    if mc and isinstance(mc, list):
+        for m in mc:
+            url = m.get("url")
+            if url:
+                return url
+    mt = entry.get("media_thumbnail")
+    if mt and isinstance(mt, list):
+        for m in mt:
+            url = m.get("url")
+            if url:
+                return url
+    for enc in entry.get("enclosures", []) or []:
+        typ = enc.get("type", "") or ""
+        href = enc.get("href", "") or enc.get("url", "")
+        if typ.startswith("image/") and href:
+            return href
+    for src_html in (entry.get("summary", ""), _get_content_html(entry)):
+        if not src_html:
+            continue
+        img = BeautifulSoup(src_html, "html.parser").find("img")
+        if img and img.get("src"):
+            return img.get("src")
+    return None
+
+
+def _get_content_html(entry) -> str:
+    content = entry.get("content")
+    if content and isinstance(content, list) and content:
+        return content[0].get("value", "") or ""
+    return ""
+
+
 def fetch_full_content(url: str) -> str | None:
     """원문 링크에서 본문 스크래핑"""
     try:
@@ -143,6 +178,7 @@ def collect_all_feeds(processed_guids: set) -> list[dict]:
                     "published": published,
                     "summary": summary[:2000],
                     "content": content[:5000],
+                    "thumbnail_url": extract_thumbnail_url(entry),
                     "category": category,
                     "priority": priority,
                     "collected_at": datetime.now().isoformat(),
