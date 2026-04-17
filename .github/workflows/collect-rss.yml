@@ -3,12 +3,13 @@ name: RSS 수집 및 필터링
 on:
   schedule:
     # ── 매일 6회 (KST → UTC 변환) ──
-    - cron: '0 23 * * *'   # KST 08시
-    - cron: '0 1 * * *'    # KST 10시
-    - cron: '0 3 * * *'    # KST 12시
-    - cron: '0 5 * * *'    # KST 14시
-    - cron: '0 7 * * *'    # KST 16시
-    - cron: '0 11 * * *'   # KST 20시
+    # :03 분 사용 (GitHub Actions의 :00 정각 스킵 회피)
+    - cron: '3 23 * * *'   # KST 08:03
+    - cron: '3 1 * * *'    # KST 10:03
+    - cron: '3 3 * * *'    # KST 12:03
+    - cron: '3 5 * * *'    # KST 14:03
+    - cron: '3 7 * * *'    # KST 16:03
+    - cron: '3 11 * * *'   # KST 20:03
 
   # 수동 실행 가능
   workflow_dispatch:
