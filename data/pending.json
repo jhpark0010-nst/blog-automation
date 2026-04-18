@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-18T12:00:42.922590",
+  "last_updated": "2026-04-18T12:20:00",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075951001",
@@ -3567,9 +3567,9 @@
       "priority": 1,
       "collected_at": "2026-04-17T15:00:45.598120",
       "filter_reason": "키워드: 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 10
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267925&mode=view&src=text&kw=000001",
@@ -3584,9 +3584,9 @@
       "priority": 1,
       "collected_at": "2026-04-17T15:00:45.598684",
       "filter_reason": "키워드: 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 65
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267806&mode=view&src=text&kw=000001",
@@ -3601,9 +3601,9 @@
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.722844",
       "filter_reason": "키워드: 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 45
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267861&mode=view&src=text&kw=000001",
@@ -3618,9 +3618,9 @@
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.725962",
       "filter_reason": "키워드: 신청, 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268023&mode=view&src=text&kw=000001",
@@ -3635,9 +3635,9 @@
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.728543",
       "filter_reason": "키워드: 신청, 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267890&mode=view&src=text&kw=000001",
@@ -3652,9 +3652,9 @@
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.731979",
       "filter_reason": "키워드: 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 40
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267859&mode=view&src=text&kw=000001",
@@ -3669,9 +3669,9 @@
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.736075",
       "filter_reason": "키워드: 신청, 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267873&mode=view&src=text&kw=000001",
@@ -3686,9 +3686,9 @@
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.738933",
       "filter_reason": "키워드: 신청, 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417163000004",
@@ -3703,9 +3703,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T15:00:59.538406",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 25
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418005800009",
@@ -3720,9 +3720,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T19:00:41.332918",
       "filter_reason": "키워드: 마감 | 마감일 있음 | 금액/혜택 명시",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 66
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417092700053",
@@ -3737,9 +3737,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T23:00:38.058514",
       "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417130000530",
@@ -3754,43 +3754,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T23:00:40.095491",
       "filter_reason": "키워드: 돌봄",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417101400530",
-      "source": "연합뉴스_경제",
-      "title": "기초연금 수급자라면…통신비 할인과 일자리 등 혜택 챙겨야",
-      "link": "https://www.yna.co.kr/view/AKR20260417101400530",
-      "published": "2026-04-18T06:11:01+09:00",
-      "summary": "(서울=연합뉴스) 서한기 기자 = 만 65세 이상 어르신의 노후 생활을 돕기 위해 지급되는 기초연금 외에도 수급자들이 놓치지 말아야 할 알짜혜택...",
-      "content": "만 65세 이상 어르신의 노후 생활을 돕기 위해 지급되는 기초연금 외에도 수급자들이 놓치지 말아야 할 알짜혜택들이 운영되고 있다.\n국민연금공단 관계자는 \"기초연금 수급자라는 사실만으로도 일상에서 누릴 수 있는 혜택이 많으므로 아직 신청하지 않은 항목이 있다면 적극적으로 챙겨야 한다\"고 조언했다.\n기초연금 신청 및 혜택에 관한 자세한 상담은 국민연금공단 콜센터를 통해 받을 수 있다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/cms/2023/02/21/30/PCM20230221000030990_P2.jpg",
-      "category": "경제",
-      "priority": 2,
-      "collected_at": "2026-04-17T23:00:48.149210",
-      "filter_reason": "키워드: 할인, 신청, 일자리, 연금",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417132800003",
-      "source": "연합뉴스_경제",
-      "title": "[부동산캘린더] 봄 이사철에 분양도 활짝…내주 전국 8천400여가구 청약",
-      "link": "https://www.yna.co.kr/view/AKR20260417132800003",
-      "published": "2026-04-18T06:00:00+09:00",
-      "summary": "(서울=연합뉴스) 홍국기 기자 = 봄 이사 철이 한창인 가운데 다음 주는 분양 시장이 활기를 띨 것으로 전망된다.",
-      "content": "봄 이사 철이 한창인 가운데 다음 주는 분양 시장이 활기를 띨 것으로 전망된다.\n오피스텔은 118㎡형 17실과 119㎡형 17실이 공급된다.\n분양가는 도생이 14억6천100만∼14억9천900만원, 오피스텔이 25억3천717만∼26억7천123만원이다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/17/AKR20260417132800003_01_i_P2.jpg",
-      "category": "경제",
-      "priority": 2,
-      "collected_at": "2026-04-17T23:00:51.567559",
-      "filter_reason": "키워드: 청약 | 금액/혜택 명시",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 59
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417095100051",
@@ -3805,26 +3771,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T23:00:56.720772",
       "filter_reason": "키워드: 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
-      "source": "연합뉴스_사회",
-      "title": "청라하늘대교 인천시민 무료인데…면제 신청률 '저조'",
-      "link": "https://www.yna.co.kr/view/AKR20260417111600065",
-      "published": "2026-04-18T07:17:01+09:00",
-      "summary": "(인천=연합뉴스) 김상연 기자 = 청라하늘대교 통행료 무료 대상이 인천시민 전체로 확대됐지만, 실제 요금 면제 신청률은 저조한 것으로 나타났다.",
-      "content": "청라하늘대교 통행료 무료 대상이 인천시민 전체로 확대됐지만, 실제 요금 면제 신청률은 저조한 것으로 나타났다.\n지난 1월 5일 개통한 청라하늘대교의 통행료 면제는 그동안 영종·청라 주민에게 적용되다가 3개월 만에 인천시민 전체로 확대됐다.\n인천시는 지난달 30일부터 통행료 감면시스템에 하이패스 카드와 차량번호를 사전 등록하면 소유 차량의 통행료를 면제받을 수 있게 했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/yna/YH/2026/01/04/PYH2026010405860006500_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-17T23:00:59.281073",
-      "filter_reason": "키워드: 감면, 면제, 신청 | 금액/혜택 명시",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 44
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260415114600052",
@@ -3839,26 +3788,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T23:01:00.617129",
       "filter_reason": "키워드: 출산",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417103900530",
-      "source": "연합뉴스_사회",
-      "title": "[위클리 건강] 대상포진 백신, '통증 예방' 넘어 '치매 지연' 카드 될까",
-      "link": "https://www.yna.co.kr/view/AKR20260417103900530",
-      "published": "2026-04-18T07:11:00+09:00",
-      "summary": "(서울=연합뉴스) 김길원 기자 = 중장년층에게 대상포진은 공포의 대상이다. 단순히 피부에 발진이 생기는 것을 넘어, 칼로 베는 듯한 극심한 신경...",
-      "content": "단순히 피부에 발진이 생기는 것을 넘어, 칼로 베는 듯한 극심한 신경통을 남기기 때문이다.\n의학 저널 '알츠하이머병과 치매' 최신호에 따르면 경희의료원 디지털헬스센터 연동건 교수 연구팀이 50세 이상 한국인 251만9천582명을 대상으로 약 10년간의 의료 빅데이터를 추적 분석한 결과, 대상포진 백신 접종과 치매 사이에 이 같은 연관성이 관찰됐다.\n연구팀은 대상자를 백신 접종군과 미접종군으로 세분화해 알츠하이머병 및 기억장애 발생 위험을 비교 분석했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/17/AKR20260417103900530_01_i_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-17T23:01:02.066254",
-      "filter_reason": "키워드: 의료",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 54
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417130000530",
@@ -3873,9 +3805,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T23:01:03.940322",
       "filter_reason": "키워드: 돌봄",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 59
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417116900061",
@@ -3890,9 +3822,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T23:01:05.060515",
       "filter_reason": "키워드: 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 64
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418013000061",
@@ -3907,26 +3839,9 @@
       "priority": 2,
       "collected_at": "2026-04-17T23:01:09.497325",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417101400530",
-      "source": "연합뉴스_사회",
-      "title": "기초연금 수급자라면…통신비 할인과 일자리 등 혜택 챙겨야",
-      "link": "https://www.yna.co.kr/view/AKR20260417101400530",
-      "published": "2026-04-18T06:11:01+09:00",
-      "summary": "(서울=연합뉴스) 서한기 기자 = 만 65세 이상 어르신의 노후 생활을 돕기 위해 지급되는 기초연금 외에도 수급자들이 놓치지 말아야 할 알짜혜택...",
-      "content": "만 65세 이상 어르신의 노후 생활을 돕기 위해 지급되는 기초연금 외에도 수급자들이 놓치지 말아야 할 알짜혜택들이 운영되고 있다.\n국민연금공단 관계자는 \"기초연금 수급자라는 사실만으로도 일상에서 누릴 수 있는 혜택이 많으므로 아직 신청하지 않은 항목이 있다면 적극적으로 챙겨야 한다\"고 조언했다.\n기초연금 신청 및 혜택에 관한 자세한 상담은 국민연금공단 콜센터를 통해 받을 수 있다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/cms/2023/02/21/30/PCM20230221000030990_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-17T23:01:15.677748",
-      "filter_reason": "키워드: 할인, 신청, 일자리, 연금",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 10
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417096800052",
@@ -3941,9 +3856,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T01:00:58.547751",
       "filter_reason": "키워드: 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 38
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075400056",
@@ -3958,9 +3873,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T01:01:00.268500",
       "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417114700064",
@@ -3975,9 +3890,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T01:01:01.174953",
       "filter_reason": "키워드: 신청, 모집 | 마감일 있음",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418021000034",
@@ -3992,9 +3907,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T01:01:04.341536",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 5
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417140900005",
@@ -4009,9 +3924,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T01:01:06.964866",
       "filter_reason": "키워드: 이자",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 30
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075700064",
@@ -4026,9 +3941,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T01:01:08.837684",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 20
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417043100051",
@@ -4043,9 +3958,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T01:01:09.711038",
       "filter_reason": "키워드: 할인 | 금액/혜택 명시",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 30
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418033900054",
@@ -4060,9 +3975,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T03:00:48.129025",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 10
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418033800053",
@@ -4077,9 +3992,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T03:00:49.607657",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 20
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418032400055",
@@ -4094,9 +4009,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T03:00:54.028904",
       "filter_reason": "키워드: 수당 | 금액/혜택 명시",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 20
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418032100051",
@@ -4111,9 +4026,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T03:00:55.504747",
       "filter_reason": "키워드: 접수",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 25
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417136400061",
@@ -4128,9 +4043,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T03:00:56.796559",
       "filter_reason": "키워드: 이자",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 20
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417086300061",
@@ -4145,26 +4060,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T03:01:06.762507",
       "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260418037100001",
-      "source": "연합뉴스_정치",
-      "title": "李대통령 \"장기보유특별공제 폐지가 세금폭탄? 명백한 거짓선동\"",
-      "link": "https://www.yna.co.kr/view/AKR20260418037100001",
-      "published": "2026-04-18T13:20:56+09:00",
-      "summary": "(서울=연합뉴스) 황윤기 기자 = 이재명 대통령은 18일 부동산 양도세 장기보유특별공제(장특공제)를 폐지하면 '세금 폭탄'으로 이어질 것이라는 ...",
-      "content": "이재명 대통령은 18일 부동산 양도세 장기보유특별공제를 폐지하면 '세금 폭탄'으로 이어질 것이라는 국민의힘 주장에 \"논리모순이자 명백한 거짓 선동\"이라고 반박했다.\n이 대통령은 이에 \"부당한 목적을 감춘 잘못된 자기주장을 합리화하려고 이런 거짓말로 국민을 속여선 안 된다\"며 \"특히 공적 책임을 가진 정치인과 언론인이라면\"이라고 비판했다.\n이 대통령은 \"양도세 장기보유특별공제는 '거주 여부와 무관하게' 오로지 장기보유했다는 사유만으로 양도세를 대폭 깎아주는 제도\"라며 \"장기거주에 대해 양도세를 깎아주는 제도는 따로 있다\"고 설명했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/yna/YH/2026/04/17/PYH2026041714170001300_P2.jpg",
-      "category": "정치",
-      "priority": 2,
-      "collected_at": "2026-04-18T05:00:34.275825",
-      "filter_reason": "키워드: 이자, 세금, 공제",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 66
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418036600004",
@@ -4179,9 +4077,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T05:00:42.876988",
       "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 20
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418036300055",
@@ -4196,26 +4094,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T05:00:44.186107",
       "filter_reason": "키워드: 교통, 근로",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260418034500530",
-      "source": "연합뉴스_사회",
-      "title": "자궁출혈 등 코로나백신 부작용 추가 인정…피해 보상 가능",
-      "link": "https://www.yna.co.kr/view/AKR20260418034500530",
-      "published": "2026-04-18T12:07:18+09:00",
-      "summary": "(서울=연합뉴스) 고유선 기자 = 코로나19 백신을 맞은 뒤 이상 자궁출혈이나 안면신경 마비·이명 등의 질환이 생긴 경우도 백신 부작용을 인정받...",
-      "content": "코로나19 백신을 맞은 뒤 이상 자궁출혈이나 안면신경 마비·이명 등의 질환이 생긴 경우도 백신 부작용을 인정받아 정식 피해 보상을 신청할 수 있게 된다.\n정부는 특별법 시행 이전에는 백신이 원인임이 명백한 '인과성 인정' 질환 12가지 질환에 대해서만 피해 보상을 했지만, 특별법을 제정하면서 기존보다 완화된 판단 기준에 따라 폭넓은 피해 구제 기회를 마련하겠다고 밝힌 바 있다.\n이번 조치로 기존에 심의에서 '관련성 의심' 질환 판정을 받은 경우는 재심 신청을 할 수 있다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/18/AKR20260418034500530_01_i_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-18T05:00:46.756834",
-      "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 30
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418043000003",
@@ -4230,9 +4111,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T07:00:40.329699",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 5
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418039500064",
@@ -4247,9 +4128,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T07:00:45.285846",
       "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 38
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418039200052",
@@ -4264,9 +4145,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T07:00:47.844196",
       "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418048200004",
@@ -4281,9 +4162,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T09:00:37.796402",
       "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 25
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418048200004",
@@ -4298,9 +4179,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T09:00:49.181689",
       "filter_reason": "키워드: 신청",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 25
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418048600051",
@@ -4315,9 +4196,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T09:00:50.847942",
       "filter_reason": "키워드: 병원 | 금액/혜택 명시",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 10
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418044600004",
@@ -4332,9 +4213,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T09:00:53.577190",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 20
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418044700052",
@@ -4349,9 +4230,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T09:00:55.090374",
       "filter_reason": "키워드: 신청, 접수",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 35
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418053400001",
@@ -4366,9 +4247,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T11:00:33.885170",
       "filter_reason": "키워드: 임대",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 10
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418027451001",
@@ -4383,9 +4264,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T11:00:41.975121",
       "filter_reason": "키워드: 교통",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 15
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418051600060",
@@ -4400,9 +4281,9 @@
       "priority": 2,
       "collected_at": "2026-04-18T11:00:54.022793",
       "filter_reason": "키워드: 병원",
-      "status": "unreviewed",
-      "evaluated_at": null,
-      "score": null
+      "status": "rejected",
+      "evaluated_at": "2026-04-18T12:20:00",
+      "score": 20
     }
   ]
 }
