@@ -182,6 +182,9 @@ def collect_all_feeds(processed_guids: set) -> list[dict]:
                     "category": category,
                     "priority": priority,
                     "collected_at": datetime.now().isoformat(),
+                    "status": "unreviewed",  # unreviewed | passed | rejected | expired
+                    "evaluated_at": None,
+                    "score": None,
                 }
                 all_items.append(item)
                 new_count += 1

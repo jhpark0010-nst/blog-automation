@@ -75,7 +75,7 @@ def extract_slug(html: str, filename: str) -> str:
 
 def publish_to_wp(title: str, content: str, meta_desc: str, slug: str):
     auth = base64.b64encode(f"{WP_USERNAME}:{WP_APP_PASSWORD}".encode()).decode()
-    payload = {"title": title, "content": content, "status": "draft", "slug": slug}
+    payload = {"title": title, "content": content, "status": "publish", "slug": slug}
     if meta_desc:
         payload["meta"] = {"yoast_wpseo_metadesc": meta_desc}
     resp = requests.post(
@@ -120,7 +120,7 @@ def main() -> int:
             shutil.move(str(path), str(dest))
             success.append({"title": title, "link": link, "file": path.name})
             slack_notify(
-                f"📝 *새 글 발행*\n제목: {title}\nWordPress: {link}\n파일: {path.name}"
+                f"📝 *새 글 공개 발행*\n제목: {title}\nWordPress: {link}"
             )
             print(f"OK: {path.name} → {link}")
         except requests.HTTPError as e:

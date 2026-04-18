@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-18T09:00:56.395720",
+  "last_updated": "2026-04-18T20:08:46.288535",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075951001",
@@ -13,7 +13,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:38:03.215524",
-      "filter_reason": "키워드: 이자"
+      "filter_reason": "키워드: 이자",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417093900001",
@@ -27,7 +30,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:38:04.824860",
-      "filter_reason": "키워드: 감면, 공제 | 금액/혜택 명시"
+      "filter_reason": "키워드: 감면, 공제 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417091400061",
@@ -41,7 +47,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:38:08.320003",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075900001",
@@ -55,7 +64,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:38:20.150140",
-      "filter_reason": "키워드: 이자"
+      "filter_reason": "키워드: 이자",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417024500001",
@@ -69,7 +81,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:38:21.273566",
-      "filter_reason": "키워드: 선발, 채용"
+      "filter_reason": "키워드: 선발, 채용",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075600061",
@@ -83,7 +98,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:38:31.541576",
-      "filter_reason": "키워드: 모집 | 금액/혜택 명시"
+      "filter_reason": "키워드: 모집 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417060600004",
@@ -97,7 +115,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:38:50.915228",
-      "filter_reason": "키워드: 의료 | 금액/혜택 명시"
+      "filter_reason": "키워드: 의료 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417058800053",
@@ -111,7 +132,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:38:52.218474",
-      "filter_reason": "키워드: 감면 | 금액/혜택 명시"
+      "filter_reason": "키워드: 감면 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417047900055",
@@ -125,7 +149,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:01.581191",
-      "filter_reason": "키워드: 수당, 취업 | 금액/혜택 명시"
+      "filter_reason": "키워드: 수당, 취업 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417034900504",
@@ -139,7 +166,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:07.067577",
-      "filter_reason": "키워드: 의료"
+      "filter_reason": "키워드: 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417025400504",
@@ -153,7 +183,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:11.540074",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417098100055",
@@ -167,7 +200,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:22.705060",
-      "filter_reason": "키워드: 지원금, 신청, 접수, 마감 | 마감일 있음 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금, 신청, 접수, 마감 | 마감일 있음 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417085200003",
@@ -181,7 +217,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:25.327164",
-      "filter_reason": "키워드: 교통, 주거, 임대, 월세"
+      "filter_reason": "키워드: 교통, 주거, 임대, 월세",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417035200061",
@@ -195,7 +234,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:27.135021",
-      "filter_reason": "키워드: 임대, 돌봄"
+      "filter_reason": "키워드: 임대, 돌봄",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417041500002",
@@ -209,7 +251,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:30.483193",
-      "filter_reason": "키워드: 대출 | 금액/혜택 명시"
+      "filter_reason": "키워드: 대출 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417081600073",
@@ -223,7 +268,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:35.544933",
-      "filter_reason": "키워드: 금리"
+      "filter_reason": "키워드: 금리",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417024500001",
@@ -237,7 +285,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:36.664461",
-      "filter_reason": "키워드: 선발, 채용"
+      "filter_reason": "키워드: 선발, 채용",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417077300008",
@@ -251,7 +302,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:38.882186",
-      "filter_reason": "키워드: 금리 | 금액/혜택 명시"
+      "filter_reason": "키워드: 금리 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417071300083",
@@ -265,7 +319,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:41.521221",
-      "filter_reason": "키워드: 대출"
+      "filter_reason": "키워드: 대출",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417071800003",
@@ -279,7 +336,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:42.627439",
-      "filter_reason": "키워드: 주거"
+      "filter_reason": "키워드: 주거",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417071700008",
@@ -293,7 +353,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:43.745783",
-      "filter_reason": "키워드: 취업"
+      "filter_reason": "키워드: 취업",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417066400056",
@@ -307,7 +370,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:51.566388",
-      "filter_reason": "키워드: 지원금, 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금, 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417059500008",
@@ -321,7 +387,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:55.533338",
-      "filter_reason": "키워드: 이자"
+      "filter_reason": "키워드: 이자",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417058600002",
@@ -335,7 +404,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:39:56.846192",
-      "filter_reason": "키워드: 금리"
+      "filter_reason": "키워드: 금리",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417052300008",
@@ -349,7 +421,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:06.943789",
-      "filter_reason": "키워드: 세금 | 금액/혜택 명시"
+      "filter_reason": "키워드: 세금 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417017000004",
@@ -363,7 +438,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:13.707041",
-      "filter_reason": "키워드: 주거, 전세"
+      "filter_reason": "키워드: 주거, 전세",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417014600004",
@@ -377,7 +455,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:14.808390",
-      "filter_reason": "키워드: 주거"
+      "filter_reason": "키워드: 주거",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417041100002",
@@ -391,7 +472,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:17.025189",
-      "filter_reason": "키워드: 취업"
+      "filter_reason": "키워드: 취업",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417049900008",
@@ -405,7 +489,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:18.166765",
-      "filter_reason": "키워드: 대출, 신청"
+      "filter_reason": "키워드: 대출, 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417047700002",
@@ -419,7 +506,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:19.311966",
-      "filter_reason": "키워드: 할인 | 금액/혜택 명시"
+      "filter_reason": "키워드: 할인 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417048100062",
@@ -433,7 +523,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:20.443278",
-      "filter_reason": "키워드: 지원금 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417047900055",
@@ -447,7 +540,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:21.565634",
-      "filter_reason": "키워드: 수당, 취업 | 금액/혜택 명시"
+      "filter_reason": "키워드: 수당, 취업 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417044200060",
@@ -461,7 +557,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:29.887752",
-      "filter_reason": "키워드: 감면, 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 감면, 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417029300003",
@@ -475,7 +574,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:30.994281",
-      "filter_reason": "키워드: 근로"
+      "filter_reason": "키워드: 근로",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417042100051",
@@ -489,7 +591,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:33.449739",
-      "filter_reason": "키워드: 일자리, 근로 | 금액/혜택 명시"
+      "filter_reason": "키워드: 일자리, 근로 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417041700008",
@@ -503,7 +608,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:34.576916",
-      "filter_reason": "키워드: 연금, 퇴직 | 금액/혜택 명시"
+      "filter_reason": "키워드: 연금, 퇴직 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417038300062",
@@ -517,7 +625,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:36.816154",
-      "filter_reason": "키워드: 지원금, 신청, 접수 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금, 신청, 접수 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417037600055",
@@ -531,7 +642,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:39.027251",
-      "filter_reason": "키워드: 신청, 모집"
+      "filter_reason": "키워드: 신청, 모집",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417036300017",
@@ -545,7 +659,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:41.514546",
-      "filter_reason": "키워드: 채용"
+      "filter_reason": "키워드: 채용",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417035600061",
@@ -559,7 +676,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:45.970355",
-      "filter_reason": "키워드: 할인, 이자 | 금액/혜택 명시"
+      "filter_reason": "키워드: 할인, 이자 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417032200065",
@@ -573,7 +693,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:47.126663",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417030400003",
@@ -587,7 +710,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:40:48.365850",
-      "filter_reason": "키워드: 이자"
+      "filter_reason": "키워드: 이자",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260416169600002",
@@ -601,7 +727,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:06.569563",
-      "filter_reason": "키워드: 대출 | 금액/혜택 명시"
+      "filter_reason": "키워드: 대출 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417004700009",
@@ -615,7 +744,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:12.273917",
-      "filter_reason": "키워드: 마감 | 마감일 있음 | 금액/혜택 명시"
+      "filter_reason": "키워드: 마감 | 마감일 있음 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417003300002",
@@ -629,7 +761,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:13.384779",
-      "filter_reason": "키워드: 마감 | 마감일 있음 | 금액/혜택 명시"
+      "filter_reason": "키워드: 마감 | 마감일 있음 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417099000530",
@@ -643,7 +778,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:15.718197",
-      "filter_reason": "키워드: 신청, 의료"
+      "filter_reason": "키워드: 신청, 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417098000062",
@@ -657,7 +795,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:16.875127",
-      "filter_reason": "키워드: 일자리"
+      "filter_reason": "키워드: 일자리",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417094300052",
@@ -671,7 +812,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:22.492058",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417085200003",
@@ -685,7 +829,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:24.015315",
-      "filter_reason": "키워드: 교통, 주거, 임대, 월세"
+      "filter_reason": "키워드: 교통, 주거, 임대, 월세",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417096600055",
@@ -699,7 +846,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:25.132483",
-      "filter_reason": "키워드: 모집"
+      "filter_reason": "키워드: 모집",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417035200061",
@@ -713,7 +863,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:27.303908",
-      "filter_reason": "키워드: 임대, 돌봄"
+      "filter_reason": "키워드: 임대, 돌봄",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417092600052",
@@ -727,7 +880,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:30.772916",
-      "filter_reason": "키워드: 모집, 의료, 진료"
+      "filter_reason": "키워드: 모집, 의료, 진료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417094400004",
@@ -741,7 +897,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:31.887190",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417048700530",
@@ -755,7 +914,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:36.647071",
-      "filter_reason": "키워드: 의료, 건강보험, 병원"
+      "filter_reason": "키워드: 의료, 건강보험, 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417077400530",
@@ -769,7 +931,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:37.739006",
-      "filter_reason": "키워드: 급여"
+      "filter_reason": "키워드: 급여",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417085800061",
@@ -783,7 +948,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:40.001856",
-      "filter_reason": "키워드: 근로"
+      "filter_reason": "키워드: 근로",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417092100505",
@@ -797,7 +965,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:41.102938",
-      "filter_reason": "키워드: 신청, 선발, 퇴직"
+      "filter_reason": "키워드: 신청, 선발, 퇴직",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417083000054",
@@ -811,7 +982,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:55.745106",
-      "filter_reason": "키워드: 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417081200063",
@@ -825,7 +999,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:58.300605",
-      "filter_reason": "키워드: 접수"
+      "filter_reason": "키워드: 접수",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417081000064",
@@ -839,7 +1016,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:41:59.413294",
-      "filter_reason": "키워드: 주거, 돌봄 | 금액/혜택 명시"
+      "filter_reason": "키워드: 주거, 돌봄 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417034000064",
@@ -853,7 +1033,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:02.761128",
-      "filter_reason": "키워드: 공제"
+      "filter_reason": "키워드: 공제",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417074900004",
@@ -867,7 +1050,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:06.193589",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075600061",
@@ -881,7 +1067,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:09.579841",
-      "filter_reason": "키워드: 모집 | 금액/혜택 명시"
+      "filter_reason": "키워드: 모집 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417065151063",
@@ -895,7 +1084,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:10.789722",
-      "filter_reason": "키워드: 접수, 진료, 병원"
+      "filter_reason": "키워드: 접수, 진료, 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417078500055",
@@ -909,7 +1101,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:11.986979",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260416171100530",
@@ -923,7 +1118,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:13.263153",
-      "filter_reason": "키워드: 급여, 돌봄, 의료, 병원"
+      "filter_reason": "키워드: 급여, 돌봄, 의료, 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417076100054",
@@ -937,7 +1135,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:20.121782",
-      "filter_reason": "키워드: 의료 | 금액/혜택 명시"
+      "filter_reason": "키워드: 의료 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417073100062",
@@ -951,7 +1152,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:24.566986",
-      "filter_reason": "키워드: 의료, 진료, 병원 | 금액/혜택 명시"
+      "filter_reason": "키워드: 의료, 진료, 병원 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417071800003",
@@ -965,7 +1169,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:30.321345",
-      "filter_reason": "키워드: 주거"
+      "filter_reason": "키워드: 주거",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417058900004",
@@ -979,7 +1186,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:33.663042",
-      "filter_reason": "키워드: 주거"
+      "filter_reason": "키워드: 주거",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260416151000004",
@@ -993,7 +1203,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:34.809113",
-      "filter_reason": "키워드: 모집"
+      "filter_reason": "키워드: 모집",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260416153200004",
@@ -1007,7 +1220,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:36.009605",
-      "filter_reason": "키워드: 모집, 돌봄"
+      "filter_reason": "키워드: 모집, 돌봄",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417037300004",
@@ -1021,7 +1237,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:40.439568",
-      "filter_reason": "키워드: 근로"
+      "filter_reason": "키워드: 근로",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417071000062",
@@ -1035,7 +1254,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:41.926631",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417070400055",
@@ -1049,7 +1271,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:45.063559",
-      "filter_reason": "키워드: 대출, 이자, 세금, 전세, 월세 | 금액/혜택 명시"
+      "filter_reason": "키워드: 대출, 이자, 세금, 전세, 월세 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417063800061",
@@ -1063,7 +1288,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:48.944641",
-      "filter_reason": "키워드: 마감 | 마감일 있음"
+      "filter_reason": "키워드: 마감 | 마감일 있음",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417068700056",
@@ -1077,7 +1305,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:50.455267",
-      "filter_reason": "키워드: 신청, 어린이집 | 마감일 있음"
+      "filter_reason": "키워드: 신청, 어린이집 | 마감일 있음",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417066900062",
@@ -1091,7 +1322,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:53.437656",
-      "filter_reason": "키워드: 할인"
+      "filter_reason": "키워드: 할인",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417056700061",
@@ -1105,7 +1339,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:42:56.641069",
-      "filter_reason": "키워드: 지원금 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417065100063",
@@ -1119,7 +1356,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:00.929738",
-      "filter_reason": "키워드: 접수, 진료, 병원"
+      "filter_reason": "키워드: 접수, 진료, 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417064700055",
@@ -1133,7 +1373,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:03.588741",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417066400056",
@@ -1147,7 +1390,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:07.648546",
-      "filter_reason": "키워드: 지원금, 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금, 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417064000057",
@@ -1161,7 +1407,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:10.284781",
-      "filter_reason": "키워드: 급여"
+      "filter_reason": "키워드: 급여",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417058400004",
@@ -1175,7 +1424,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:11.784030",
-      "filter_reason": "키워드: 모집"
+      "filter_reason": "키워드: 모집",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417060600004",
@@ -1189,7 +1441,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:15.646276",
-      "filter_reason": "키워드: 의료 | 금액/혜택 명시"
+      "filter_reason": "키워드: 의료 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417061300055",
@@ -1203,7 +1458,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:17.902627",
-      "filter_reason": "키워드: 돌봄"
+      "filter_reason": "키워드: 돌봄",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417058300004",
@@ -1217,7 +1475,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:28.321524",
-      "filter_reason": "키워드: 교통, 병원"
+      "filter_reason": "키워드: 교통, 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417051800004",
@@ -1231,7 +1492,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T05:43:41.214998",
-      "filter_reason": "키워드: 교통 | 금액/혜택 명시"
+      "filter_reason": "키워드: 교통 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417097900053",
@@ -1245,7 +1509,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:02.521490",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417103700064",
@@ -1259,7 +1526,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:09.706760",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417103500051",
@@ -1273,7 +1543,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:12.069087",
-      "filter_reason": "키워드: 퇴직"
+      "filter_reason": "키워드: 퇴직",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417104300055",
@@ -1287,7 +1560,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:13.429182",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417097500002",
@@ -1301,7 +1577,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:16.844665",
-      "filter_reason": "키워드: 의료"
+      "filter_reason": "키워드: 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417101600004",
@@ -1315,7 +1594,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:18.869517",
-      "filter_reason": "키워드: 일자리 | 금액/혜택 명시"
+      "filter_reason": "키워드: 일자리 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417103700064",
@@ -1329,7 +1611,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:23.821031",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417103500051",
@@ -1343,7 +1628,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:24.832695",
-      "filter_reason": "키워드: 퇴직"
+      "filter_reason": "키워드: 퇴직",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417104300055",
@@ -1357,7 +1645,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:26.169629",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417104100055",
@@ -1371,7 +1662,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:27.312099",
-      "filter_reason": "키워드: 수당 | 금액/혜택 명시"
+      "filter_reason": "키워드: 수당 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417103800063",
@@ -1385,7 +1679,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:28.320497",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417102800053",
@@ -1399,7 +1696,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:31.843430",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417097500002",
@@ -1413,7 +1713,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:33.858471",
-      "filter_reason": "키워드: 의료"
+      "filter_reason": "키워드: 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417101600004",
@@ -1427,7 +1730,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:36.012137",
-      "filter_reason": "키워드: 일자리 | 금액/혜택 명시"
+      "filter_reason": "키워드: 일자리 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417097300052",
@@ -1441,7 +1747,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:37.356054",
-      "filter_reason": "키워드: 모집, 선발"
+      "filter_reason": "키워드: 모집, 선발",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417100400054",
@@ -1455,7 +1764,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T06:10:44.550913",
-      "filter_reason": "키워드: 돌봄"
+      "filter_reason": "키워드: 돌봄",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417113600504",
@@ -1469,7 +1781,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:35.176514",
-      "filter_reason": "키워드: 이자"
+      "filter_reason": "키워드: 이자",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111100530",
@@ -1483,7 +1798,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:39.829342",
-      "filter_reason": "키워드: 감면, 의료 | 금액/혜택 명시"
+      "filter_reason": "키워드: 감면, 의료 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417104700062",
@@ -1497,7 +1815,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:43.587489",
-      "filter_reason": "키워드: 퇴직"
+      "filter_reason": "키워드: 퇴직",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417115200003",
@@ -1511,7 +1832,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:46.120055",
-      "filter_reason": "키워드: 일자리 | 금액/혜택 명시"
+      "filter_reason": "키워드: 일자리 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417115700002",
@@ -1525,7 +1849,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:47.135146",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417052951008",
@@ -1539,7 +1866,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:49.468279",
-      "filter_reason": "키워드: 마감 | 마감일 있음"
+      "filter_reason": "키워드: 마감 | 마감일 있음",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417114800054",
@@ -1553,7 +1883,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:51.007184",
-      "filter_reason": "키워드: 수당 | 금액/혜택 명시"
+      "filter_reason": "키워드: 수당 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417113700002",
@@ -1567,7 +1900,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:52.186420",
-      "filter_reason": "키워드: 마감 | 마감일 있음"
+      "filter_reason": "키워드: 마감 | 마감일 있음",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417107000061",
@@ -1581,7 +1917,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T07:00:57.095963",
-      "filter_reason": "키워드: 신청, 교통"
+      "filter_reason": "키워드: 신청, 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417114200371",
@@ -1595,7 +1934,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T07:01:06.618637",
-      "filter_reason": "키워드: 근로"
+      "filter_reason": "키워드: 근로",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417110800371",
@@ -1609,7 +1951,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T07:01:08.143536",
-      "filter_reason": "키워드: 접수"
+      "filter_reason": "키워드: 접수",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417114800054",
@@ -1623,7 +1968,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T07:01:10.556371",
-      "filter_reason": "키워드: 수당 | 금액/혜택 명시"
+      "filter_reason": "키워드: 수당 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111100530",
@@ -1637,7 +1985,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T07:01:11.704012",
-      "filter_reason": "키워드: 감면, 의료 | 금액/혜택 명시"
+      "filter_reason": "키워드: 감면, 의료 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417107900061",
@@ -1651,7 +2002,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T07:01:18.686999",
-      "filter_reason": "키워드: 돌봄, 의료"
+      "filter_reason": "키워드: 돌봄, 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417104900053",
@@ -1665,7 +2019,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T07:01:20.853189",
-      "filter_reason": "키워드: 신청, 병원 | 금액/혜택 명시"
+      "filter_reason": "키워드: 신청, 병원 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417107000061",
@@ -1679,7 +2036,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T07:01:21.864098",
-      "filter_reason": "키워드: 신청, 교통"
+      "filter_reason": "키워드: 신청, 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756364&call_from=rsslink",
@@ -1693,7 +2053,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:34.106936",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756363&call_from=rsslink",
@@ -1707,7 +2070,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:34.108200",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756362&call_from=rsslink",
@@ -1721,7 +2087,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:34.108966",
-      "filter_reason": "키워드: 지원금 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756356&call_from=rsslink",
@@ -1735,7 +2104,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:36.078895",
-      "filter_reason": "키워드: 신청, 접수 | 마감일 있음"
+      "filter_reason": "키워드: 신청, 접수 | 마감일 있음",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756359&call_from=rsslink",
@@ -1749,7 +2121,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:36.079773",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756355&call_from=rsslink",
@@ -1763,7 +2138,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:36.081562",
-      "filter_reason": "키워드: 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756354&call_from=rsslink",
@@ -1777,7 +2155,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:36.082275",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756351&call_from=rsslink",
@@ -1791,7 +2172,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:37.863470",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756350&call_from=rsslink",
@@ -1805,7 +2189,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:37.864331",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756346&call_from=rsslink",
@@ -1819,7 +2206,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:37.869613",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756347&call_from=rsslink",
@@ -1833,7 +2223,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:37.909382",
-      "filter_reason": "금액/혜택 명시"
+      "filter_reason": "금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756331&call_from=rsslink",
@@ -1847,7 +2240,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:37.910759",
-      "filter_reason": "키워드: 일자리"
+      "filter_reason": "키워드: 일자리",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756343&call_from=rsslink",
@@ -1861,7 +2257,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:37.911732",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756330&call_from=rsslink",
@@ -1875,7 +2274,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:37.913252",
-      "filter_reason": "키워드: 이자, 취업, 근로"
+      "filter_reason": "키워드: 이자, 취업, 근로",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756333&call_from=rsslink",
@@ -1889,7 +2291,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.819494",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756341&call_from=rsslink",
@@ -1903,7 +2308,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.820500",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756338&call_from=rsslink",
@@ -1917,7 +2325,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.830797",
-      "filter_reason": "키워드: 선발, 의료"
+      "filter_reason": "키워드: 선발, 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756336&call_from=rsslink",
@@ -1931,7 +2342,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.845550",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756334&call_from=rsslink",
@@ -1945,7 +2359,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.860626",
-      "filter_reason": "금액/혜택 명시"
+      "filter_reason": "금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756327&call_from=rsslink",
@@ -1959,7 +2376,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.866572",
-      "filter_reason": "금액/혜택 명시"
+      "filter_reason": "금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756325&call_from=rsslink",
@@ -1973,7 +2393,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.873441",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756323&call_from=rsslink",
@@ -1987,7 +2410,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.888617",
-      "filter_reason": "금액/혜택 명시"
+      "filter_reason": "금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756321&call_from=rsslink",
@@ -2001,7 +2427,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.901814",
-      "filter_reason": "금액/혜택 명시"
+      "filter_reason": "금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756319&call_from=rsslink",
@@ -2015,7 +2444,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.914994",
-      "filter_reason": "키워드: 병원 | 금액/혜택 명시"
+      "filter_reason": "키워드: 병원 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756315&call_from=rsslink",
@@ -2029,7 +2461,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.930872",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756313&call_from=rsslink",
@@ -2043,7 +2478,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.936523",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756311&call_from=rsslink",
@@ -2057,7 +2495,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.946086",
-      "filter_reason": "키워드: 선발 | 금액/혜택 명시"
+      "filter_reason": "키워드: 선발 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756308&call_from=rsslink",
@@ -2071,7 +2512,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.948867",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756310&call_from=rsslink",
@@ -2085,7 +2529,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.950217",
-      "filter_reason": "금액/혜택 명시"
+      "filter_reason": "금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756303&call_from=rsslink",
@@ -2099,7 +2546,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.951487",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756299&call_from=rsslink",
@@ -2113,7 +2563,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.959396",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756302&call_from=rsslink",
@@ -2127,7 +2580,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.961638",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756300&call_from=rsslink",
@@ -2141,7 +2597,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.969566",
-      "filter_reason": "키워드: 의료, 진료 | 금액/혜택 명시"
+      "filter_reason": "키워드: 의료, 진료 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756290&call_from=rsslink",
@@ -2155,7 +2614,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.970548",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756291&call_from=rsslink",
@@ -2169,7 +2631,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.972496",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756287&call_from=rsslink",
@@ -2183,7 +2648,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.983204",
-      "filter_reason": "금액/혜택 명시"
+      "filter_reason": "금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756293&call_from=rsslink",
@@ -2197,7 +2665,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.986256",
-      "filter_reason": "키워드: 신청, 의료, 병원"
+      "filter_reason": "키워드: 신청, 의료, 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756292&call_from=rsslink",
@@ -2211,7 +2682,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.988275",
-      "filter_reason": "키워드: 신청, 의료"
+      "filter_reason": "키워드: 신청, 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756285&call_from=rsslink",
@@ -2225,7 +2699,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.995455",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756273&call_from=rsslink",
@@ -2239,7 +2716,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:39.997702",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756283&call_from=rsslink",
@@ -2253,7 +2733,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:40.005684",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756279&call_from=rsslink",
@@ -2267,7 +2750,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:41.943073",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756281&call_from=rsslink",
@@ -2281,7 +2767,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:41.949751",
-      "filter_reason": "금액/혜택 명시"
+      "filter_reason": "금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756277&call_from=rsslink",
@@ -2295,7 +2784,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T09:00:52.719372",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417135600063",
@@ -2309,7 +2801,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:03.231757",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417072951001",
@@ -2323,7 +2818,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:19.701780",
-      "filter_reason": "키워드: 임대"
+      "filter_reason": "키워드: 임대",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417117000052",
@@ -2337,7 +2835,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:21.790083",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417138400008",
@@ -2351,7 +2852,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:24.275062",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417078400530",
@@ -2365,7 +2869,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:27.071525",
-      "filter_reason": "키워드: 지원금, 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금, 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417126100062",
@@ -2379,7 +2886,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:29.449784",
-      "filter_reason": "키워드: 감면 | 금액/혜택 명시"
+      "filter_reason": "키워드: 감면 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417126700002",
@@ -2393,7 +2903,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:31.410116",
-      "filter_reason": "키워드: 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417139000061",
@@ -2407,7 +2920,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:46.684868",
-      "filter_reason": "키워드: 의료"
+      "filter_reason": "키워드: 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417136300371",
@@ -2421,7 +2937,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:48.638770",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417135400004",
@@ -2435,7 +2954,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:49.618133",
-      "filter_reason": "키워드: 주거"
+      "filter_reason": "키워드: 주거",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417135600063",
@@ -2449,7 +2971,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:50.610689",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417135500054",
@@ -2463,7 +2988,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:53.995471",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417130200530",
@@ -2477,7 +3005,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:54.924147",
-      "filter_reason": "키워드: 출산, 돌봄"
+      "filter_reason": "키워드: 출산, 돌봄",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417135100057",
@@ -2491,7 +3022,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:55.907407",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417120251055",
@@ -2505,7 +3039,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:01:59.754945",
-      "filter_reason": "키워드: 교통, 병원"
+      "filter_reason": "키워드: 교통, 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417128151007",
@@ -2519,7 +3056,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:02.157917",
-      "filter_reason": "키워드: 접수 | 금액/혜택 명시"
+      "filter_reason": "키워드: 접수 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417078400530",
@@ -2533,7 +3073,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:03.143504",
-      "filter_reason": "키워드: 지원금, 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 지원금, 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417094100004",
@@ -2547,7 +3090,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:05.004919",
-      "filter_reason": "키워드: 교통 | 금액/혜택 명시"
+      "filter_reason": "키워드: 교통 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417128500052",
@@ -2561,7 +3107,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:05.929472",
-      "filter_reason": "키워드: 신청, 접수 | 금액/혜택 명시"
+      "filter_reason": "키워드: 신청, 접수 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417126100062",
@@ -2575,7 +3124,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:07.842128",
-      "filter_reason": "키워드: 감면 | 금액/혜택 명시"
+      "filter_reason": "키워드: 감면 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417128100007",
@@ -2589,7 +3141,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:11.855112",
-      "filter_reason": "키워드: 접수 | 금액/혜택 명시"
+      "filter_reason": "키워드: 접수 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417127600004",
@@ -2603,7 +3158,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:12.818575",
-      "filter_reason": "키워드: 접수"
+      "filter_reason": "키워드: 접수",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417125300054",
@@ -2617,7 +3175,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:14.703261",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417123000004",
@@ -2631,7 +3192,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:16.652333",
-      "filter_reason": "키워드: 할인 | 금액/혜택 명시"
+      "filter_reason": "키워드: 할인 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417119700057",
@@ -2645,7 +3209,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:19.548180",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417120600004",
@@ -2659,7 +3226,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:21.558640",
-      "filter_reason": "키워드: 연금"
+      "filter_reason": "키워드: 연금",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417120200055",
@@ -2673,7 +3243,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:22.541323",
-      "filter_reason": "키워드: 교통, 병원"
+      "filter_reason": "키워드: 교통, 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417119000055",
@@ -2687,7 +3260,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:23.464373",
-      "filter_reason": "키워드: 보조금 | 금액/혜택 명시"
+      "filter_reason": "키워드: 보조금 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417117000052",
@@ -2701,7 +3277,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T09:02:25.405864",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756375&call_from=rsslink",
@@ -2715,7 +3294,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T11:00:38.545130",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756366&call_from=rsslink",
@@ -2729,7 +3311,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T11:00:38.552613",
-      "filter_reason": "키워드: 급여, 주거, 돌봄, 취업, 근로 | 금액/혜택 명시"
+      "filter_reason": "키워드: 급여, 주거, 돌봄, 취업, 근로 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756378&call_from=rsslink",
@@ -2743,7 +3328,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T11:00:38.554729",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417141300062",
@@ -2757,7 +3345,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T11:00:49.141277",
-      "filter_reason": "키워드: 금리 | 금액/혜택 명시"
+      "filter_reason": "키워드: 금리 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417150400530",
@@ -2771,7 +3362,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T11:00:56.833134",
-      "filter_reason": "키워드: 돌봄, 채용"
+      "filter_reason": "키워드: 돌봄, 채용",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417144400004",
@@ -2785,7 +3379,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T11:01:03.632167",
-      "filter_reason": "키워드: 이자 | 금액/혜택 명시"
+      "filter_reason": "키워드: 이자 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417145300004",
@@ -2799,7 +3396,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T11:01:06.357491",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417141300062",
@@ -2813,7 +3413,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T11:01:12.666498",
-      "filter_reason": "키워드: 금리 | 금액/혜택 명시"
+      "filter_reason": "키워드: 금리 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417118600004",
@@ -2827,7 +3430,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T11:01:15.280316",
-      "filter_reason": "키워드: 병원 | 금액/혜택 명시"
+      "filter_reason": "키워드: 병원 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756380&call_from=rsslink",
@@ -2841,7 +3447,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T13:00:36.935487",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756379&call_from=rsslink",
@@ -2855,7 +3464,10 @@
       "category": "정책",
       "priority": 1,
       "collected_at": "2026-04-17T13:00:37.371855",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417150900004",
@@ -2869,7 +3481,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T13:00:47.195700",
-      "filter_reason": "키워드: 면제 | 금액/혜택 명시"
+      "filter_reason": "키워드: 면제 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417156700064",
@@ -2883,7 +3498,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T13:00:51.150125",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417150900004",
@@ -2897,7 +3515,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T13:00:55.137250",
-      "filter_reason": "키워드: 면제 | 금액/혜택 명시"
+      "filter_reason": "키워드: 면제 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268026&mode=view&src=text&kw=000001",
@@ -2911,7 +3532,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:42.618744",
-      "filter_reason": "기본 통과"
+      "filter_reason": "기본 통과",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267862&mode=view&src=text&kw=000001",
@@ -2925,7 +3549,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:42.625057",
-      "filter_reason": "키워드: 신청, 교통"
+      "filter_reason": "키워드: 신청, 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267976&mode=view&src=text&kw=000001",
@@ -2939,7 +3566,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:45.598120",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267925&mode=view&src=text&kw=000001",
@@ -2953,7 +3583,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:45.598684",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267806&mode=view&src=text&kw=000001",
@@ -2967,7 +3600,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.722844",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267861&mode=view&src=text&kw=000001",
@@ -2981,7 +3617,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.725962",
-      "filter_reason": "키워드: 신청, 교통"
+      "filter_reason": "키워드: 신청, 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268023&mode=view&src=text&kw=000001",
@@ -2995,7 +3634,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.728543",
-      "filter_reason": "키워드: 신청, 교통"
+      "filter_reason": "키워드: 신청, 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267890&mode=view&src=text&kw=000001",
@@ -3009,7 +3651,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.731979",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267859&mode=view&src=text&kw=000001",
@@ -3023,7 +3668,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.736075",
-      "filter_reason": "키워드: 신청, 교통"
+      "filter_reason": "키워드: 신청, 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267873&mode=view&src=text&kw=000001",
@@ -3037,7 +3685,10 @@
       "category": "교통/주거",
       "priority": 1,
       "collected_at": "2026-04-17T15:00:48.738933",
-      "filter_reason": "키워드: 신청, 교통"
+      "filter_reason": "키워드: 신청, 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417163000004",
@@ -3051,7 +3702,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T15:00:59.538406",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418005800009",
@@ -3065,7 +3719,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T19:00:41.332918",
-      "filter_reason": "키워드: 마감 | 마감일 있음 | 금액/혜택 명시"
+      "filter_reason": "키워드: 마감 | 마감일 있음 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417092700053",
@@ -3079,7 +3736,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T23:00:38.058514",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417130000530",
@@ -3093,7 +3753,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-17T23:00:40.095491",
-      "filter_reason": "키워드: 돌봄"
+      "filter_reason": "키워드: 돌봄",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417101400530",
@@ -3107,7 +3770,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T23:00:48.149210",
-      "filter_reason": "키워드: 할인, 신청, 일자리, 연금"
+      "filter_reason": "키워드: 할인, 신청, 일자리, 연금",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417132800003",
@@ -3121,7 +3787,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-17T23:00:51.567559",
-      "filter_reason": "키워드: 청약 | 금액/혜택 명시"
+      "filter_reason": "키워드: 청약 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417095100051",
@@ -3135,7 +3804,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T23:00:56.720772",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -3149,7 +3821,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T23:00:59.281073",
-      "filter_reason": "키워드: 감면, 면제, 신청 | 금액/혜택 명시"
+      "filter_reason": "키워드: 감면, 면제, 신청 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260415114600052",
@@ -3163,7 +3838,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T23:01:00.617129",
-      "filter_reason": "키워드: 출산"
+      "filter_reason": "키워드: 출산",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417103900530",
@@ -3177,7 +3855,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T23:01:02.066254",
-      "filter_reason": "키워드: 의료"
+      "filter_reason": "키워드: 의료",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417130000530",
@@ -3191,7 +3872,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T23:01:03.940322",
-      "filter_reason": "키워드: 돌봄"
+      "filter_reason": "키워드: 돌봄",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417116900061",
@@ -3205,7 +3889,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T23:01:05.060515",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418013000061",
@@ -3219,7 +3906,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T23:01:09.497325",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417101400530",
@@ -3233,7 +3923,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-17T23:01:15.677748",
-      "filter_reason": "키워드: 할인, 신청, 일자리, 연금"
+      "filter_reason": "키워드: 할인, 신청, 일자리, 연금",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417096800052",
@@ -3247,7 +3940,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T01:00:58.547751",
-      "filter_reason": "키워드: 교통"
+      "filter_reason": "키워드: 교통",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075400056",
@@ -3261,7 +3957,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T01:01:00.268500",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417114700064",
@@ -3275,7 +3974,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T01:01:01.174953",
-      "filter_reason": "키워드: 신청, 모집 | 마감일 있음"
+      "filter_reason": "키워드: 신청, 모집 | 마감일 있음",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418021000034",
@@ -3289,7 +3991,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T01:01:04.341536",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417140900005",
@@ -3303,7 +4008,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T01:01:06.964866",
-      "filter_reason": "키워드: 이자"
+      "filter_reason": "키워드: 이자",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075700064",
@@ -3317,7 +4025,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T01:01:08.837684",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417043100051",
@@ -3331,7 +4042,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T01:01:09.711038",
-      "filter_reason": "키워드: 할인 | 금액/혜택 명시"
+      "filter_reason": "키워드: 할인 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418033900054",
@@ -3345,7 +4059,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T03:00:48.129025",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418033800053",
@@ -3359,7 +4076,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T03:00:49.607657",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418032400055",
@@ -3373,7 +4093,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T03:00:54.028904",
-      "filter_reason": "키워드: 수당 | 금액/혜택 명시"
+      "filter_reason": "키워드: 수당 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418032100051",
@@ -3387,7 +4110,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T03:00:55.504747",
-      "filter_reason": "키워드: 접수"
+      "filter_reason": "키워드: 접수",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417136400061",
@@ -3401,7 +4127,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T03:00:56.796559",
-      "filter_reason": "키워드: 이자"
+      "filter_reason": "키워드: 이자",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417086300061",
@@ -3415,7 +4144,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T03:01:06.762507",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418037100001",
@@ -3429,7 +4161,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-18T05:00:34.275825",
-      "filter_reason": "키워드: 이자, 세금, 공제"
+      "filter_reason": "키워드: 이자, 세금, 공제",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418036600004",
@@ -3443,7 +4178,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T05:00:42.876988",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418036300055",
@@ -3457,7 +4195,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T05:00:44.186107",
-      "filter_reason": "키워드: 교통, 근로"
+      "filter_reason": "키워드: 교통, 근로",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418034500530",
@@ -3471,7 +4212,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T05:00:46.756834",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418043000003",
@@ -3485,7 +4229,10 @@
       "category": "경제",
       "priority": 2,
       "collected_at": "2026-04-18T07:00:40.329699",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418039500064",
@@ -3499,7 +4246,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T07:00:45.285846",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418039200052",
@@ -3513,7 +4263,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T07:00:47.844196",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418048200004",
@@ -3527,7 +4280,10 @@
       "category": "정치",
       "priority": 2,
       "collected_at": "2026-04-18T09:00:37.796402",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418048200004",
@@ -3541,7 +4297,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T09:00:49.181689",
-      "filter_reason": "키워드: 신청"
+      "filter_reason": "키워드: 신청",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418048600051",
@@ -3555,7 +4314,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T09:00:50.847942",
-      "filter_reason": "키워드: 병원 | 금액/혜택 명시"
+      "filter_reason": "키워드: 병원 | 금액/혜택 명시",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418044600004",
@@ -3569,7 +4331,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T09:00:53.577190",
-      "filter_reason": "키워드: 병원"
+      "filter_reason": "키워드: 병원",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260418044700052",
@@ -3583,7 +4348,10 @@
       "category": "사회",
       "priority": 2,
       "collected_at": "2026-04-18T09:00:55.090374",
-      "filter_reason": "키워드: 신청, 접수"
+      "filter_reason": "키워드: 신청, 접수",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null
     }
   ]
 }

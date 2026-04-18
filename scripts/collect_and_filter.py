@@ -53,14 +53,14 @@ def get_recent_titles(published: list, pending_items: list) -> list[str]:
     return titles
 
 
-def cleanup_old_pending(items: list, max_age_days: int = 30) -> list:
-    """30일 이상 지난 pending 항목 제거"""
+def cleanup_old_pending(items: list, max_age_days: int = 7) -> list:
+    """7일 이상 지난 pending 항목 제거 (평가 기회 만료)"""
     cutoff = (datetime.now() - timedelta(days=max_age_days)).isoformat()
     before = len(items)
     items = [i for i in items if i.get("collected_at", "") >= cutoff]
     removed = before - len(items)
     if removed:
-        logger.info(f"[정리] 오래된 pending 항목 {removed}건 제거")
+        logger.info(f"[정리] 7일+ 지난 pending 항목 {removed}건 제거 (expired)")
     return items
 
 
