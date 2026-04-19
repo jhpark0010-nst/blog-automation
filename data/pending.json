@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T18:00:36.630066",
+  "last_updated": "2026-04-19T21:00:41.455810",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075951001",
@@ -969,6 +969,23 @@
       "evaluated_at": null,
       "score": null,
       "filter_reason": "키워드: 면제"
+    },
+    {
+      "guid": "https://www.yna.co.kr/view/AKR20260420003900034",
+      "source": "연합뉴스_사회",
+      "title": "'곡우'에 전국 곳곳 비…서쪽 지역 미세먼지 '나쁨'",
+      "link": "https://www.yna.co.kr/view/AKR20260420003900034",
+      "published": "2026-04-20T05:31:48+09:00",
+      "summary": "(서울=연합뉴스) 홍준석 기자 = 백곡을 기름지게 하는 봄비가 내린다는 절기상 '곡우'(穀雨)이자 월요일인 20일 전국 대부분 지역에 비가 오겠...",
+      "content": "백곡을 기름지게 하는 봄비가 내린다는 절기상 '곡우'이자 월요일인 20일 전국 대부분 지역에 비가 오겠다.\n충청권과 전라권은 아침부터, 수도권과 강원내륙·산지, 경상권은 오전부터 비가 내리겠고 늦은 오후에 대부분 그치겠다.\n강원 동해안도 오전과 오후 사이 빗방울이 떨어지는 곳이 있겠다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
+      "thumbnail_url": "https://img.yna.co.kr/photo/yna/YH/2026/04/09/PYH2026040911670001300_P2.jpg",
+      "category": "사회",
+      "priority": 2,
+      "collected_at": "2026-04-19T21:00:40.686284",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 이자"
     }
   ]
 }
