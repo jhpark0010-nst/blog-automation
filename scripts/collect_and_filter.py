@@ -4,6 +4,7 @@ GitHub Actions 진입점
 RSS 수집 → 1단계 필터링 → pending.json 업데이트
 """
 import json
+import re
 import sys
 import logging
 from pathlib import Path
@@ -16,6 +17,9 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from config.settings import PROCESSED_PATH, PENDING_PATH, PUBLISHED_PATH, DUPLICATE_CHECK_DAYS
 from src.rss_collector import collect_all_feeds
 from src.content_filter import filter_items
+
+DRAFTS_PUBLISHED_DIR = PROJECT_ROOT / "data" / "drafts" / "published"
+CANDIDATES_PATH = PROJECT_ROOT / "data" / "candidates.json"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -38,17 +42,42 @@ def save_json(path: Path, data):
 
 
 def get_recent_titles(published: list, pending_items: list) -> list[str]:
-    """최근 N일 내 발행/대기 글 제목 수집 (중복 체크용)"""
+    """최근 N일 내 published(json) + pending + drafts/published/*.html + candidates.json 제목 수집"""
     cutoff = (datetime.now() - timedelta(days=DUPLICATE_CHECK_DAYS)).isoformat()
     titles = []
 
+    # 1) 레거시 published.json
     for item in published:
         if item.get("published_at", "") >= cutoff:
             titles.append(item.get("title", ""))
 
+    # 2) 현재 pending
     for item in pending_items:
         if item.get("collected_at", "") >= cutoff:
             titles.append(item.get("title", ""))
+
+    # 3) drafts/published/ 폴더 HTML의 Title 주석 (신규 구조)
+    if DRAFTS_PUBLISHED_DIR.exists():
+        for html_path in DRAFTS_PUBLISHED_DIR.glob("*.html"):
+            try:
+                text = html_path.read_text(encoding="utf-8")[:2000]
+                m = re.search(r"Title:\s*(.+)", text)
+                if m:
+                    titles.append(m.group(1).strip())
+            except Exception as e:
+                logger.warning(f"Title 추출 실패 ({html_path.name}): {e}")
+
+    # 4) candidates.json 대기 중 항목
+    if CANDIDATES_PATH.exists():
+        try:
+            with open(CANDIDATES_PATH, encoding="utf-8") as f:
+                cand = json.load(f)
+            for item in cand.get("items", []):
+                t = item.get("title", "")
+                if t:
+                    titles.append(t)
+        except Exception as e:
+            logger.warning(f"candidates.json 로드 실패: {e}")
 
     return titles
 

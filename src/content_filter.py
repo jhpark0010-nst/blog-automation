@@ -3,13 +3,21 @@
 - 제외 키워드로 걸러내기
 - 우선 키워드 매칭
 - 뉴스 소스는 키워드 필수
+- 최근 published/candidates/pending 과의 유사도 체크 (bigram 기반)
 """
 import logging
+import re
 from datetime import datetime, timedelta
 
 from config.settings import EXCLUDE_KEYWORDS, PRIORITY_KEYWORDS, DUPLICATE_CHECK_DAYS
 
 logger = logging.getLogger(__name__)
+
+
+def _title_bigrams(title: str) -> set:
+    """제목에서 한글/영숫자만 남기고 bigram 집합 반환"""
+    cleaned = re.sub(r'[^\w가-힣]', '', title)
+    return {cleaned[i:i+2] for i in range(len(cleaned) - 1)}
 
 
 def check_exclude(title: str, summary: str) -> str | None:
@@ -42,12 +50,19 @@ def has_amount_signal(title: str, summary: str, content: str) -> bool:
     ])
 
 
-def is_similar(title: str, existing_titles: list[str]) -> bool:
-    """제목 키워드 3개 이상 겹치면 유사 판정"""
-    title_words = set(title.split())
+def is_similar(title: str, existing_titles: list[str], min_common_bigrams: int = 8) -> bool:
+    """
+    Bigram 기반 유사도 체크.
+    공통 bigram이 min_common_bigrams 이상이면 유사 판정.
+    한국어 제목(조사/특수문자 변형)에 강건한 방식.
+    """
+    tbg = _title_bigrams(title)
+    if not tbg:
+        return False
     for existing in existing_titles:
-        overlap = title_words & set(existing.split())
-        if len(overlap) >= 3:
+        ebg = _title_bigrams(existing)
+        common = tbg & ebg
+        if len(common) >= min_common_bigrams:
             return True
     return False
 
