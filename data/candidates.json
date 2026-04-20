@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20T09:47:14.143511",
+  "last_updated": "2026-04-20T09:50:31.741281",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -1224,23 +1224,6 @@
       "evaluated_at": "2026-04-20T09:47:14.138063",
       "score": 71,
       "filter_reason": "키워드: 진료, 병원"
-    },
-    {
-      "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756687&call_from=rsslink",
-      "source": "정책브리핑_보도자료",
-      "title": "[기후에너지환경부](참고) 수도권, 강원권, 충청권, 광주, 전북, 대구, 경북 황사 위기경보 '관심' 단계 발령",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756687&call_from=rsslink",
-      "published": "Mon, 20 Apr 2026 08:15:00 GMT",
-      "summary": "▷ 황사 영향 본격화, 국민건강 유의 당부기후에너지환경부(장관 김성환)는 4월 20일 17시부로 서울, 인천, 경기, 강원(영동, 영서), 대전, 세종, 충북, 충남, 광주, 전북, 대구, 경북에 황사 위기경보 '관심' 단계를 발령했다.* 황사로 인한 4월 21일 미세먼지(PM-10) \"매우 나쁨(일평균 150㎍/㎥ 초과)\" 예상기후에너지환경부는 황사 위기경보 '관심' 단계가 발령됨에 따라 관계 기관과 해당 지방정부에 곧바로 상황을 전파하고, '황사 재난 안내서(매뉴얼)'에 따라 철저하게 대응할 것을 요청했다.김진식 기후에너지환경부 대기환경국장은 \"고비사막과 내몽골고원에서 발원한 황사가 한반도로 유입되어 전국에 영향을 주고 있는 만큼, '황사 발생 대비 국민행동 요령'에 따라 야외활동은 최대한 자제하고, 개인 건강관리에 더욱 신경을 써야 한다\"라고 밝혔다.붙임  황사 발생 대비 국민행동 요령.  끝.[자료제공 :(www.korea.kr)]",
-      "content": "",
-      "thumbnail_url": "https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif",
-      "category": "정책",
-      "priority": 1,
-      "collected_at": "2026-04-20T09:00:34.461536",
-      "status": "passed",
-      "evaluated_at": "2026-04-20T09:47:14.138066",
-      "score": 82,
-      "filter_reason": "기본 통과"
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756680&call_from=rsslink",
