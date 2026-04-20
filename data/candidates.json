@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20T02:24:41.352833",
+  "last_updated": "2026-04-20T03:20:05.643505",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -17,23 +17,6 @@
       "status": "passed",
       "evaluated_at": "2026-04-18T12:20:00",
       "score": 71
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417132800003",
-      "source": "연합뉴스_경제",
-      "title": "[부동산캘린더] 봄 이사철에 분양도 활짝…내주 전국 8천400여가구 청약",
-      "link": "https://www.yna.co.kr/view/AKR20260417132800003",
-      "published": "2026-04-18T06:00:00+09:00",
-      "summary": "(서울=연합뉴스) 홍국기 기자 = 봄 이사 철이 한창인 가운데 다음 주는 분양 시장이 활기를 띨 것으로 전망된다.",
-      "content": "봄 이사 철이 한창인 가운데 다음 주는 분양 시장이 활기를 띨 것으로 전망됩니다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/17/AKR20260417132800003_01_i_P2.jpg",
-      "category": "경제",
-      "priority": 2,
-      "collected_at": "2026-04-17T23:00:51.567559",
-      "filter_reason": "키워드: 청약 | 금액/혜택 명시",
-      "status": "passed",
-      "evaluated_at": "2026-04-18T12:20:00",
-      "score": 88
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417101400530_eco",
