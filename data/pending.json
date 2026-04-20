@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20T16:00:48.612149",
+  "last_updated": "2026-04-20T17:00:42.528407",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075951001",
@@ -1972,6 +1972,40 @@
       "evaluated_at": null,
       "score": null,
       "filter_reason": "키워드: 교통"
+    },
+    {
+      "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268009&mode=view&src=text&kw=000001",
+      "source": "국토교통부_공지",
+      "title": "2026년도 건설관리분야 표준개발협력기관 지원사업 공고",
+      "link": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268009&mode=view&src=text&kw=000001",
+      "published": "2026-04-21T00:00:00+09:00",
+      "summary": "공고 제2026-565호국토교통부 공고 제2026-00호2026년도 건설관리분야 표준개발협력기관 지원사업 공고2026년도 건설관리분야 표준개발협력기관(COSD)의 지원사업을 위해 아래와 같이 공고하오니, 동 사업에 참여를 희망하시는 자는 절차에 따라 신청하여 주시기 바랍니다.2026.04.21.국토교통부장관",
+      "content": "2026년도 건설관리분야 표준개발협력기관 지원사업 공고\n담당부서\n건축안전과\n담당자\n서미정\n연락처\n044-201-4991\n등록일\n2026-04-21\n조회수\n7\n첨부파일\n2026년_건설관리분야_표준개발협력기관_지원사업_공고계획(안).hwpx\n(55Kbyte)\n바로보기\n2026년_건설관리분야_표준개발협력기관_지원사업_공고계획(안).pdf\n(320Kbyte)\n바로보기\n붙임1._국토교통분야_표준개발협력기관_운영_지침(3).hwpx\n(173Kbyte)\n바로보기\n붙임2._국토교통분야_표준개발협력기관_지원사업_운영_메뉴얼(3).hwpx\n(256Kbyte)\n바로보기\n붙임3._국가표준개발_사업계획서(서식)_(3).hwpx\n(44Kbyte)\n바로보기\n공고 제2026-565호\n국토교통부 공고 제2026-00호\n2026년도 건설관리분야 표준개발협력기관 지원사업 공고\n2026년도 건설관리분야 표준개발협력기관(COSD)의 지원사업을 위해 아래와 같이 공고하오니, 동 사업에 참여를 희망하시는 자는 절차에 따라 신청하여 주시기 바랍니다.\n2026.04.21.\n국토교통부장관\n목록\n비밀번호입력\n비밀번호",
+      "thumbnail_url": null,
+      "category": "교통/주거",
+      "priority": 1,
+      "collected_at": "2026-04-20T17:00:37.177921",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 신청, 교통"
+    },
+    {
+      "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267898&mode=view&src=text&kw=000001",
+      "source": "국토교통부_공지",
+      "title": "건설신기술 지정 신청(2790)",
+      "link": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267898&mode=view&src=text&kw=000001",
+      "published": "2026-04-21T00:00:00+09:00",
+      "summary": "공고 제2026-532호◉국토교통부공고 제2026-532호「건설기술 진흥법」제14조의 규정에 의한 신기술지정 신청이 있어 같은 법 시행령 제32조제3항의 규정에따라 공고하니,동 건의 이해관계인으로서 아래 신기술지정 신청기술에 대하여 의견이 있는 경우에는 이해관계 의견서를 공고일부터30일내에 국토교통과학기술진흥원장에게 제출하여 주시기 바랍니다.2026년04월21일국토교통부장관건설신기술 지정 신청(2790)",
+      "content": "",
+      "thumbnail_url": null,
+      "category": "교통/주거",
+      "priority": 1,
+      "collected_at": "2026-04-20T17:00:37.194546",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 신청, 교통"
     }
   ]
 }
