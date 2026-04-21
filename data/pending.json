@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21T12:00:51.909243",
+  "last_updated": "2026-04-21T13:00:42.766903",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075951001",
@@ -5525,6 +5525,23 @@
       "evaluated_at": null,
       "score": null,
       "filter_reason": "키워드: 접수"
+    },
+    {
+      "guid": "https://www.yna.co.kr/view/AKR20260421169600004",
+      "source": "연합뉴스_사회",
+      "title": "대검 감찰위, '집단 퇴정' 수원지검 검사들 '징계 불가' 결론",
+      "link": "https://www.yna.co.kr/view/AKR20260421169600004",
+      "published": "2026-04-21T20:59:34+09:00",
+      "summary": "(서울=연합뉴스) 정윤주 기자 = 이화영 전 경기도 평화부지사의 '술 파티 의혹 위증 사건' 공판준비기일에 법정에서 재판부 기피 신청을 하고 집...",
+      "content": "이화영 전 경기도 평화부지사의 '술 파티 의혹 위증 사건' 공판준비기일에 법정에서 재판부 기피 신청을 하고 집단 퇴정한 수원지검 검사들에 대해 대검찰청 감찰위원회가 징계할 수 없다고 판단한 것으로 알려졌다.\n감찰위 결과와 관계 없이 징계 청구 여부에 대한 최종 판단은 검찰총장 몫이다.\n검찰총장이 감찰위와 달리 판단할 가능성도 있다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
+      "thumbnail_url": "https://img.yna.co.kr/photo/yna/YH/2026/03/23/PYH2026032306420001300_P2.jpg",
+      "category": "사회",
+      "priority": 2,
+      "collected_at": "2026-04-21T13:00:42.740291",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 신청"
     }
   ]
 }
