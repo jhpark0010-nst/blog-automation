@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T15:11:51.084655",
+  "last_updated": "2026-04-22T16:00:52.091573",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417075951001",
@@ -7650,6 +7650,57 @@
       "evaluated_at": null,
       "score": null,
       "filter_reason": "키워드: 병원"
+    },
+    {
+      "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268077&mode=view&src=text&kw=000001",
+      "source": "국토교통부_공지",
+      "title": "「빈집 및 소규모주택 정비사업 정비지원기구」 지정",
+      "link": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268077&mode=view&src=text&kw=000001",
+      "published": "2026-04-23T00:00:00+09:00",
+      "summary": "고시 제2026-209호국토교통부 고시 제2026 - 209호「빈집 및 소규모주택 정비사업 정비지원기구」지정「빈집 및 소규모주택 정비에 관한 특례법」제50조에 따른 빈집 및 소규모주택 정비사업의 정비지원기구를 다음과 같이 지정합니다.2026년4월23일국토교통부장관□지정기관:「지방공기업법」에 따라 설립된 고양도시관리공사ㅇ 소재지:경기도 고양시 일산서구 중앙로1601(대화동)ㅇ 대행하는 업무의 내용-빈집정비사업 및 소규모주택정비사업의 정책 지원-빈집정비사업 및 소규모주택정비사업의 상담 및 교육 지원-빈집정비사업 및 소규모주택정비사업의 사업시행계획 및 관리처분계획의 수립 지원-관리계획의 수립 지원 및 소규모주택정비사업의 관리 지원-빈집정비사업 및 소규모주택정비사업 제도에 관한 조사·연구-「빈집 및 소규모주택 정비에 관한 특례법」제4조에 따른 빈집정비계획의 수립 지원-빈집정비사업의 시행을 위한 빈집의 현황 관리-소규모주택정비사업의 주민합의체 구성 및 조합 설립의 지원-주택(「공동주택관리법」제2조제1항제2호에 따른 의무관리대상 공동주택은 제외)의 설계·시공 및 유지관리에 대한 지원-빈집정비사업 및 소규모주택정비사업의 타당성 평가-「주택도시기금법」등 법령에 따른 빈집정비사업 및 소규모주택 정비사업에 대한 융자 등의 지원ㅇ 지정일: 2026년4월23일부터(별도 해지 시까지)",
+      "content": "",
+      "thumbnail_url": null,
+      "category": "교통/주거",
+      "priority": 1,
+      "collected_at": "2026-04-22T16:00:43.246695",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 교통"
+    },
+    {
+      "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267995&mode=view&src=text&kw=000001",
+      "source": "국토교통부_공지",
+      "title": "건설신기술 보호기간연장 신청(2786)",
+      "link": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=267995&mode=view&src=text&kw=000001",
+      "published": "2026-04-23T00:00:00+09:00",
+      "summary": "공고 제2026-553호◉국토교통부공고제2026-553호「건설기술 진흥법 시행령」제35조제2항에 의한 신기술 보호기간연장 신청이 있어 같은 조 제4항에따라공고하니,동 건의 이해관계인으로서 신기술 제846호의 보호기간연장 신청기술에 대하여 의견이 있는 경우에는이해관계 의견서를 공고일부터30일내에 국토교통과학기술진흥원장에게 제출하여 주시기 바랍니다.2026년04월23일국토교통부장관건설신기술 보호기간연장 신청(2786)",
+      "content": "",
+      "thumbnail_url": null,
+      "category": "교통/주거",
+      "priority": 1,
+      "collected_at": "2026-04-22T16:00:43.254606",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 신청, 교통"
+    },
+    {
+      "guid": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268076&mode=view&src=text&kw=000001",
+      "source": "국토교통부_공지",
+      "title": "혁신제품 지정을 위한 심의예정 공고",
+      "link": "https://www.molit.go.kr/USR/BORD0201/m_69/BRD.jsp?idx=268076&mode=view&src=text&kw=000001",
+      "published": "2026-04-23T00:00:00+09:00",
+      "summary": "공고 제2026-595호국토교통부공고 제2026-000호국토교통부 혁신제품 평가결과 기술혁신성이 인정된 제품에 대해 「국토교통부 혁신제품 지정 지침」 제11조에 따라 다음과 같이 심의예정 공고합니다.2026년 4월 23일국토교통부장관",
+      "content": "",
+      "thumbnail_url": null,
+      "category": "교통/주거",
+      "priority": 1,
+      "collected_at": "2026-04-22T16:00:44.041434",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 교통"
     }
   ]
 }
