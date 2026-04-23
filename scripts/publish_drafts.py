@@ -1,11 +1,16 @@
 """data/drafts/*.html → WordPress REST API 발행
 GitHub Actions에서 실행. 성공 시 data/drafts/published/ 로 이동.
+
+두 경로로 호출됨:
+1. `python scripts/publish_drafts.py` → main() 이 drafts/*.html 전부 순차 발행 (fallback/legacy workflow).
+2. `from scripts.publish_drafts import publish_single_draft` → Writer inline 발행.
 """
 import base64
 import os
 import re
 import shutil
 import sys
+from datetime import datetime
 from pathlib import Path
 
 import requests
@@ -98,6 +103,63 @@ def slack_notify(text: str) -> None:
         print(f"Slack 알림 실패: {e}", file=sys.stderr)
 
 
+def append_publish_comment(html: str, post_id: int, link: str) -> str:
+    """발행 성공 후 HTML 끝에 WP 정보 주석 추가. Reviewer 가 post_id 로 WP 수정/삭제."""
+    comment = (
+        "\n\n<!-- WP 발행 정보\n"
+        f"WpPostId: {post_id}\n"
+        f"WpLink: {link}\n"
+        f"PublishedAt: {datetime.now().isoformat()}\n"
+        "-->\n"
+    )
+    return html + comment
+
+
+def publish_single_draft(path: Path) -> dict:
+    """단일 draft 파일을 WP 발행 + published/ 이동까지 처리.
+
+    Slack 알림은 호출자가 결정 (inline Writer 에서는 Writer 가 묶어서 알림).
+
+    Returns dict with:
+      - status: "success" | "failed"
+      - title, file (always)
+      - link, post_id (success only)
+      - error (failed only)
+    """
+    html = path.read_text(encoding="utf-8")
+    title = extract_title(html, path.name)
+    meta_desc = extract_meta_desc(html)
+    slug = extract_slug(html, path.name)
+
+    try:
+        post_id, link = publish_to_wp(title, html, meta_desc, slug)
+        final_html = append_publish_comment(html, post_id, link)
+        dest = PUBLISHED_DIR / path.name
+        dest.write_text(final_html, encoding="utf-8")
+        path.unlink()
+        return {
+            "status": "success",
+            "title": title,
+            "file": path.name,
+            "link": link,
+            "post_id": post_id,
+        }
+    except requests.HTTPError as e:
+        return {
+            "status": "failed",
+            "title": title,
+            "file": path.name,
+            "error": f"HTTP {e.response.status_code}: {e.response.text[:300]}",
+        }
+    except Exception as e:
+        return {
+            "status": "failed",
+            "title": title,
+            "file": path.name,
+            "error": str(e),
+        }
+
+
 def main() -> int:
     files = sorted(
         f for f in DRAFTS_DIR.glob("*.html") if DATE_PATTERN.match(f.name)
@@ -110,28 +172,19 @@ def main() -> int:
     success, failures = [], []
 
     for path in files:
-        html = path.read_text(encoding="utf-8")
-        title = extract_title(html, path.name)
-        meta_desc = extract_meta_desc(html)
-        slug = extract_slug(html, path.name)
-        try:
-            post_id, link = publish_to_wp(title, html, meta_desc, slug)
-            dest = PUBLISHED_DIR / path.name
-            shutil.move(str(path), str(dest))
-            success.append({"title": title, "link": link, "file": path.name})
+        result = publish_single_draft(path)
+        if result["status"] == "success":
+            success.append(result)
             slack_notify(
-                f"📝 *새 글 공개 발행*\n제목: {title}\nWordPress: {link}"
+                f"📝 *새 글 공개 발행*\n제목: {result['title']}\nWordPress: {result['link']}"
             )
-            print(f"OK: {path.name} → {link}")
-        except requests.HTTPError as e:
-            err = f"HTTP {e.response.status_code}: {e.response.text[:300]}"
-            failures.append({"file": path.name, "error": err})
-            slack_notify(f"❌ *WordPress 발행 실패*\n파일: {path.name}\n에러: {err}")
-            print(f"FAIL: {path.name} - {err}", file=sys.stderr)
-        except Exception as e:
-            failures.append({"file": path.name, "error": str(e)})
-            slack_notify(f"❌ *WordPress 발행 실패*\n파일: {path.name}\n에러: {e}")
-            print(f"FAIL: {path.name} - {e}", file=sys.stderr)
+            print(f"OK: {result['file']} → {result['link']}")
+        else:
+            failures.append(result)
+            slack_notify(
+                f"❌ *WordPress 발행 실패*\n파일: {result['file']}\n에러: {result['error']}"
+            )
+            print(f"FAIL: {result['file']} - {result['error']}", file=sys.stderr)
 
     slack_notify(
         f"📊 *발행 요약*\n성공: {len(success)}건\n실패: {len(failures)}건"
