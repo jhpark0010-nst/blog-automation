@@ -20,6 +20,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.anthropic_helper import call_json, estimate_cost_usd
+from src.content_filter import best_bigram_overlap
 
 SLACK_WEBHOOK = os.environ.get("SLACK_WEBHOOK_URL", "")
 REVIEW_ACTIONS_PATH = PROJECT_ROOT / "data" / "review-actions.json"
@@ -28,21 +29,32 @@ PUBLISHED_DIR = PROJECT_ROOT / "data" / "drafts" / "published"
 REVIEW_WINDOW_HOURS = 24
 DEDUP_LOOKBACK_DAYS = 7
 
-# Reviewer 는 판단 작업이라 Haiku 로 충분. env var 로 Writer 와 분리 가능.
-# 미설정 시 CLAUDE_MODEL (Writer 모델) fallback.
+# Reviewer 모델. 하루 1회 × ~8편이라 Sonnet 여유. env 로 Haiku 로 오버라이드 가능.
 REVIEW_MODEL = (
     os.environ.get("CLAUDE_MODEL_REVIEW", "").strip()
-    or "claude-haiku-4-5-20251001"
+    or "claude-sonnet-4-6"
 )
 
-# 입력 토큰 절감 파라미터
-BODY_HTML_MAX_CHARS = 4000
-SOURCE_SUMMARY_MAX_CHARS = 1200
-RECENT_TITLES_MAX = 20
-RESPONSE_MAX_TOKENS = 2500
+# 입출력 파라미터 (A: 모델·토큰 원복)
+BODY_HTML_MAX_CHARS = 7000
+SOURCE_SUMMARY_MAX_CHARS = 2500
+RECENT_TITLES_MAX = 30
+RESPONSE_MAX_TOKENS = 4000
 
-BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+# 중복 자동 notify 임계값 (C: bigram pre-filter)
+# 8 이상이면 Claude 호출 없이 즉시 notify.
+TITLE_BIGRAM_AUTO_NOTIFY = 8
+
+# 원문 fetch (D: 안정성 보강)
+SOURCE_FETCH_TIMEOUT = 20
+BROWSER_UAS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+]
+BROWSER_UA = BROWSER_UAS[0]  # 기존 변수 유지 (다른 곳 참조 대비)
+
 COMMENT_META_RE = re.compile(r"<!--(.*?)-->", re.DOTALL)
+TAG_STRIP_RE = re.compile(r"<[^>]+>")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -64,10 +76,10 @@ SYSTEM_PROMPT_BASE = """당신은 한국 정부정책·생활정보 블로그 pu
 
 ## 검토 기준
 
-1. **중복**: 최근 7일 내 발행글과 주제/대상/결론이 거의 동일한가?
-2. **팩트 정확성**: 원문 요약과 비교해 숫자·날짜·기관명·제도명에 오류 또는 날조가 있는가?
+1. **중복**: 최근 7일 내 발행글과 주제/대상/결론이 거의 동일한가? (시스템이 계산한 **Bigram 유사도** 힌트가 함께 제공됩니다. 수치가 높으면 중복 가능성이 높다는 신호.)
+2. **팩트 정확성**: 원문 요약과 비교해 숫자·날짜·기관명·제도명에 오류 또는 날조가 있는가? (원문 fetch 실패 시 팩트 단정 불가 — 그 경우 팩트 검증은 스킵하고 그 사실만 issues 에 남길 것.)
 3. **가독성**: 한국어 맞춤법, 띄어쓰기, 어색한 문장, 반복/누락.
-4. **SEO 및 스타일 가이드 준수**: 제목 28~34자, 메타 110~140자, 슬러그 형식, 핵심요약 박스/H2/FAQ 구조 여부, 존댓말 유지.
+4. **SEO 및 스타일 가이드 준수**: 제목 28~34자, 메타 110~140자, 슬러그 형식, 본문 700~1000단어, 핵심요약 박스/H2 2개+/FAQ 3개, 출처 링크, 존댓말 유지. (시스템이 계산한 **구조 메타** 가 함께 제공됩니다 — word_count, h2_count, faq_count, has_infobox 등. 이걸 근거로 빠르게 판정.)
 
 ## 출력
 
@@ -78,6 +90,7 @@ SYSTEM_PROMPT_BASE = """당신은 한국 정부정책·생활정보 블로그 pu
   "action": "fix" | "notify" | "pass",
   "reason": "한 줄 요약 (한국어)",
   "issues": ["상세 이슈 1 (한국어)", "상세 이슈 2 (한국어)"],
+  "recommended_action": "(notify 시) '삭제'|'통합'|'유지' 중 하나 + 한 줄 근거",
   "new_content": "(action=fix 일 때만) 수정된 전체 HTML 본문. 주석 헤더 없이 body 만. 한국어로.",
   "new_meta_desc": "(선택, 메타가 바뀔 때만) 한국어, 110~140자",
   "new_title": "(선택, 제목이 바뀔 때만) 한국어, 28~34자"
@@ -86,8 +99,8 @@ SYSTEM_PROMPT_BASE = """당신은 한국 정부정책·생활정보 블로그 pu
 
 ## 액션 규칙
 
-- `fix`: 맞춤법/가독성/SEO 규칙 위반 같은 **경미한 수정**. `new_content` 에 수정된 HTML 제공. 팩트 바꾸지 말 것.
-- `notify`: 팩트 오류 의심, 중복 확실. 사람 판단 필요. `new_content` 안 보냄. `issues` 에 구체적 근거.
+- `fix`: 맞춤법/가독성/SEO/구조 경미한 수정. `new_content` 에 수정된 HTML 제공. 팩트 바꾸지 말 것. 이미지 태그(`<img>`, `<figure>`) 는 넣지 말 것 (시스템이 자동 삽입).
+- `notify`: 팩트 오류 의심, 중복 확실, 심각한 구조 결함. `new_content` 안 보냄. `issues` 에 구체 근거 + `recommended_action` 필수.
 - `pass`: 문제 없음.
 
 **보수적으로 판단**: 애매하면 `pass`. `new_content` 안에 원문에 없는 사실을 새로 만들지 말 것.
@@ -141,22 +154,82 @@ def parse_comment_meta(html: str) -> dict[str, str]:
 
 
 def fetch_source_summary(url: str, max_chars: int = SOURCE_SUMMARY_MAX_CHARS) -> str | None:
+    """원문 URL fetch → 본문 2500자. 실패 시 다른 UA 로 1회 재시도."""
     if not url or not url.startswith("http"):
         return None
-    try:
-        from bs4 import BeautifulSoup
-        resp = requests.get(url, timeout=15, headers={"User-Agent": BROWSER_UA})
-        resp.raise_for_status()
-        resp.encoding = resp.apparent_encoding
-        soup = BeautifulSoup(resp.text, "html.parser")
-        for tag in soup.select("script, style, nav, footer, aside, .ad"):
-            tag.decompose()
-        text = soup.get_text(separator="\n", strip=True)
-        lines = [ln for ln in text.splitlines() if ln.strip()]
-        return "\n".join(lines)[:max_chars]
-    except Exception as e:
-        logger.warning(f"원문 fetch 실패 ({url}): {e}")
-        return None
+
+    from bs4 import BeautifulSoup
+
+    last_err: Exception | None = None
+    for attempt, ua in enumerate(BROWSER_UAS):
+        try:
+            resp = requests.get(
+                url,
+                timeout=SOURCE_FETCH_TIMEOUT,
+                headers={
+                    "User-Agent": ua,
+                    "Accept": "text/html,application/xhtml+xml",
+                    "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+                },
+            )
+            resp.raise_for_status()
+            resp.encoding = resp.apparent_encoding
+            soup = BeautifulSoup(resp.text, "html.parser")
+            for tag in soup.select("script, style, nav, footer, aside, .ad"):
+                tag.decompose()
+            text = soup.get_text(separator="\n", strip=True)
+            lines = [ln for ln in text.splitlines() if ln.strip()]
+            return "\n".join(lines)[:max_chars]
+        except Exception as e:
+            last_err = e
+            logger.warning(
+                f"원문 fetch 실패 attempt {attempt + 1}/{len(BROWSER_UAS)} ({url}): {e}"
+            )
+    logger.warning(f"원문 fetch 최종 실패 ({url}): {last_err}")
+    return None
+
+
+def count_words(text: str) -> int:
+    """HTML 태그 제거 후 대략적인 단어/어절 수."""
+    plain = TAG_STRIP_RE.sub(" ", text)
+    plain = re.sub(r"\s+", " ", plain).strip()
+    if not plain:
+        return 0
+    return len(plain.split())
+
+
+def analyze_article_structure(body_html: str, meta: dict) -> dict:
+    """Python 측 pre-check 메타. Claude 에게 판단 힌트로 전달.
+
+    리턴: word_count, h2_count, faq_count, has_infobox, has_source_link,
+    has_wp_post_id, image_count, raw_quote_in_body
+    """
+    h2_count = len(re.findall(r"<h2[^>]*>", body_html, re.IGNORECASE))
+    faq_count = len(re.findall(r"<details[^>]*>", body_html, re.IGNORECASE))
+    image_count = len(re.findall(r"<img[^>]*>|<figure[^>]*>", body_html, re.IGNORECASE))
+
+    has_infobox = bool(
+        re.search(r"<div[^>]*background[^>]*>[^<]*<strong>\s*핵심", body_html, re.IGNORECASE)
+    )
+    has_source_link = "출처:" in body_html or bool(
+        re.search(r'<a[^>]+href=[^>]+>\s*(?:출처|원문)', body_html)
+    )
+    has_wp_post_id = bool(meta.get("wppostid"))
+
+    # 본문 텍스트(태그 제외) 에 ASCII 큰따옴표가 2개 이상이면 쌍으로 있을 가능성
+    plain = TAG_STRIP_RE.sub(" ", body_html)
+    raw_quote_count = plain.count('"')
+
+    return {
+        "word_count": count_words(body_html),
+        "h2_count": h2_count,
+        "faq_count": faq_count,
+        "image_count": image_count,
+        "has_infobox": has_infobox,
+        "has_source_link": has_source_link,
+        "has_wp_post_id": has_wp_post_id,
+        "raw_quote_count_in_body": raw_quote_count,
+    }
 
 
 def _parse_created_iso(meta: dict) -> datetime | None:
@@ -207,7 +280,16 @@ def build_review_input(
     article_meta: dict,
     source_summary: str | None,
     recent_titles: list[str],
+    structure: dict,
+    similarity: tuple[int, str | None],
 ) -> str:
+    bigram_score, similar_title = similarity
+    similarity_line = (
+        f"{bigram_score} (최고 유사 제목: {similar_title!r})"
+        if similar_title
+        else f"{bigram_score}"
+    )
+    structure_lines = "\n".join(f"  - {k}: {v}" for k, v in structure.items())
     return (
         "## 검토 대상 글\n\n"
         f"**제목**: {article_meta.get('title', '')}\n"
@@ -215,6 +297,11 @@ def build_review_input(
         f"**슬러그**: {article_meta.get('slug', '')}\n"
         f"**원문 제목**: {article_meta.get('originaltitle', '')}\n"
         f"**원문 URL**: {article_meta.get('originalurl', '')}\n\n"
+        "### 시스템이 계산한 구조 메타 (B: Python pre-check)\n\n"
+        f"{structure_lines}\n\n"
+        "### 시스템이 계산한 최근 7일 제목 bigram 유사도 (C)\n\n"
+        f"  공통 bigram 최대 개수: {similarity_line}\n"
+        f"  (임계 참고: 8 이상이면 중복 확실, 5~7 주의, 4 이하 무관)\n\n"
         "### 본문 HTML\n\n"
         f"{article_body[:BODY_HTML_MAX_CHARS]}\n\n"
         "### 원문 본문 발췌 (팩트 대조용)\n\n"
@@ -230,13 +317,43 @@ def review_one_file(filepath: Path, recent_titles: list[str]) -> dict:
     meta = parse_comment_meta(html)
     body_only = strip_comment_headers(html)
 
+    # B: 구조 메타 pre-check
+    structure = analyze_article_structure(body_only, meta)
+
+    # C: bigram 유사도 pre-check
+    title = meta.get("title", "")
+    similarity = best_bigram_overlap(title, recent_titles)
+    bigram_score, similar_title = similarity
+
+    # C: 유사도 임계 이상이면 Claude 호출 스킵하고 자동 notify
+    if bigram_score >= TITLE_BIGRAM_AUTO_NOTIFY:
+        logger.warning(
+            f"  bigram {bigram_score} ≥ {TITLE_BIGRAM_AUTO_NOTIFY} → 자동 notify (Claude 호출 스킵)"
+        )
+        return {
+            "_file": filepath.name,
+            "_meta": meta,
+            "_api_meta": {"input_tokens": 0, "output_tokens": 0, "model": "(skipped)"},
+            "action": "notify",
+            "reason": f"최근 7일 발행글과 제목 bigram 공통 {bigram_score}개 (임계 {TITLE_BIGRAM_AUTO_NOTIFY}) — 중복 확실",
+            "issues": [
+                f"현재 제목: {title}",
+                f"유사 제목: {similar_title}",
+                "Python bigram pre-filter 로 중복 판정됨. Claude 호출 없이 notify 분류.",
+            ],
+            "recommended_action": "삭제 또는 통합 (사람 판단)",
+        }
+
+    # D: fetch 개선된 source summary
     source_url = meta.get("originalurl", "")
     source_summary = fetch_source_summary(source_url) if source_url else None
 
     try:
         result, api_meta = call_json(
             system=build_system_prompt(),
-            user=build_review_input(body_only, meta, source_summary, recent_titles),
+            user=build_review_input(
+                body_only, meta, source_summary, recent_titles, structure, similarity
+            ),
             max_tokens=RESPONSE_MAX_TOKENS,
             temperature=0.2,
             model=REVIEW_MODEL,
@@ -253,6 +370,8 @@ def review_one_file(filepath: Path, recent_titles: list[str]) -> dict:
     result["_file"] = filepath.name
     result["_meta"] = meta
     result["_api_meta"] = api_meta
+    result["_structure"] = structure
+    result["_similarity"] = similarity
     return result
 
 
@@ -346,6 +465,7 @@ def main() -> int:
                 "title": meta.get("title", filepath.name),
                 "reason": reason,
                 "issues": issues,
+                "recommended_action": result.get("recommended_action", ""),
             })
             logger.warning(f"  NOTIFY: {reason}")
 
@@ -370,6 +490,8 @@ def main() -> int:
         lines.append("\n⚠️ *NOTIFY (사람 판단 필요)*")
         for n in notify_messages[:5]:
             lines.append(f"• {n['title'][:50]}: {n['reason']}")
+            if ra := n.get("recommended_action"):
+                lines.append(f"  → 권장: {ra}")
             for issue in n.get("issues", [])[:2]:
                 lines.append(f"  - {issue}")
     lines.append(f"\n모델: {model_used} | 토큰 {total_in}in/{total_out}out | 약 ${cost:.4f}")

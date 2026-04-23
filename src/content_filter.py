@@ -67,6 +67,25 @@ def is_similar(title: str, existing_titles: list[str], min_common_bigrams: int =
     return False
 
 
+def best_bigram_overlap(title: str, existing_titles: list[str]) -> tuple[int, str | None]:
+    """제목과 existing_titles 중 최고 bigram 공통 개수 + 그 제목 반환.
+
+    Reviewer 에서 중복 의심도 수치화 용. is_similar 가 boolean 만 주는 것 보강.
+    """
+    tbg = _title_bigrams(title)
+    if not tbg:
+        return (0, None)
+    best = 0
+    best_title: str | None = None
+    for existing in existing_titles:
+        ebg = _title_bigrams(existing)
+        common = len(tbg & ebg)
+        if common > best:
+            best = common
+            best_title = existing
+    return (best, best_title)
+
+
 def filter_items(
     items: list[dict],
     recent_titles: list[str] | None = None,
