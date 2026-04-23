@@ -30,6 +30,19 @@ PUBLISHED_DIR = PROJECT_ROOT / "data" / "drafts" / "published"
 REVIEW_WINDOW_HOURS = 24
 DEDUP_LOOKBACK_DAYS = 7
 
+# Reviewer 는 판단 작업이라 Haiku 로 충분. env var 로 Writer 와 분리 가능.
+# 미설정 시 CLAUDE_MODEL (Writer 모델) fallback.
+REVIEW_MODEL = (
+    os.environ.get("CLAUDE_MODEL_REVIEW", "").strip()
+    or "claude-haiku-4-5-20251001"
+)
+
+# 입력 토큰 절감 파라미터
+BODY_HTML_MAX_CHARS = 4000
+SOURCE_SUMMARY_MAX_CHARS = 1200
+RECENT_TITLES_MAX = 20
+RESPONSE_MAX_TOKENS = 2500
+
 BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 COMMENT_META_RE = re.compile(r"<!--(.*?)-->", re.DOTALL)
 
@@ -129,7 +142,7 @@ def parse_comment_meta(html: str) -> dict[str, str]:
     return meta
 
 
-def fetch_source_summary(url: str, max_chars: int = 2000) -> str | None:
+def fetch_source_summary(url: str, max_chars: int = SOURCE_SUMMARY_MAX_CHARS) -> str | None:
     if not url or not url.startswith("http"):
         return None
     try:
@@ -183,11 +196,11 @@ def build_review_input(
         f"**원문 제목**: {article_meta.get('originaltitle', '')}\n"
         f"**원문 URL**: {article_meta.get('originalurl', '')}\n\n"
         "### 본문 HTML\n\n"
-        f"{article_body[:8000]}\n\n"
+        f"{article_body[:BODY_HTML_MAX_CHARS]}\n\n"
         "### 원문 본문 발췌 (팩트 대조용)\n\n"
         f"{source_summary or '(원문 fetch 실패 — 팩트체크 스킵)'}\n\n"
         "### 최근 7일 발행 제목 (중복 체크용)\n\n"
-        + "\n".join(f"- {t}" for t in recent_titles[:30])
+        + "\n".join(f"- {t}" for t in recent_titles[:RECENT_TITLES_MAX])
         + "\n\n위 스키마에 맞게 JSON 만 반환하세요."
     )
 
@@ -204,8 +217,9 @@ def review_one_file(filepath: Path, recent_titles: list[str]) -> dict:
         result, api_meta = call_json(
             system=build_system_prompt(),
             user=build_review_input(body_only, meta, source_summary, recent_titles),
-            max_tokens=4500,
+            max_tokens=RESPONSE_MAX_TOKENS,
             temperature=0.2,
+            model=REVIEW_MODEL,
         )
     except Exception as e:
         logger.error(f"API 호출 실패 ({filepath.name}): {e}")
