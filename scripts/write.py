@@ -87,6 +87,11 @@ SYSTEM_PROMPT_BASE = f"""당신은 publickorea.org (한국 정부정책·생활�
 
 HTML 스타일은 **프로젝트 스타일 가이드를 정확히 따를 것** (아래 별도 섹션 참조).
 
+## ⚠️ 이미지 규칙 (엄격)
+
+- **`body_html` 안에 `<figure>`, `<img>` 태그를 넣지 말 것**. 썸네일 이미지는 시스템이 자동으로 맨 위에 삽입합니다. 중복 이미지가 발행됨.
+- 원문에 이미지 URL 이 여러 개여도 마찬가지. body_html 은 순수 텍스트/HTML 구조(`<p>`, `<h2>`, `<div>`, `<ul>`, `<ol>`, `<details>`, `<strong>`)로만.
+
 ## 톤
 
 - **존댓말 ~요/~세요 종결**. 공문체 금지, 과장/감탄 금지.
@@ -150,6 +155,23 @@ def build_user_message(item: dict) -> str:
     )
 
 
+LEADING_IMG_RE = re.compile(
+    r"^\s*(?:<figure[^>]*>.*?</figure>|<img[^>]*/?>)\s*",
+    re.DOTALL | re.IGNORECASE,
+)
+
+
+def strip_leading_image(body_html: str) -> str:
+    """body_html 맨 앞에 Claude 가 덧붙인 figure/img 제거 (프롬프트 어긴 경우 안전장치)."""
+    prev = None
+    current = body_html
+    # 여러 겹 감싼 경우 대비해 반복 제거
+    while current != prev:
+        prev = current
+        current = LEADING_IMG_RE.sub("", current)
+    return current
+
+
 def assemble_final_html(article: dict, source_item: dict) -> str:
     """Claude JSON 결과 + 원본 메타 → 최종 HTML (주석 헤더 + 썸네일 + body + 출처)."""
     created_at = datetime.now().isoformat()
@@ -183,8 +205,9 @@ def assemble_final_html(article: dict, source_item: dict) -> str:
             f"</figure>\n\n"
         )
 
-    # Claude 가 작성한 body_html 삽입
-    parts.append(article.get("body_html", "").strip() + "\n\n")
+    # Claude 가 body_html 맨 앞에 이미지 넣었으면 제거 (중복 방지)
+    body = strip_leading_image(article.get("body_html", "").strip())
+    parts.append(body + "\n\n")
 
     # 출처 링크
     if source_url:
