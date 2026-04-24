@@ -41,9 +41,8 @@ SOURCE_SUMMARY_MAX_CHARS = 2500
 RECENT_TITLES_MAX = 30
 RESPONSE_MAX_TOKENS = 4000
 
-# 중복 자동 notify 임계값 (C: bigram pre-filter)
-# 8 이상이면 Claude 호출 없이 즉시 notify.
-TITLE_BIGRAM_AUTO_NOTIFY = 8
+# bigram 힌트용 (Claude 에게 참고 수치로 제공). 자동 notify 는 없음 —
+# 같은 기관/아티스트라도 다른 제도/사건/곡이면 독립 기사이므로 판단은 Claude 에게 맡김.
 
 # 원문 fetch (D: 안정성 보강)
 SOURCE_FETCH_TIMEOUT = 20
@@ -76,7 +75,9 @@ SYSTEM_PROMPT_BASE = """당신은 한국 정부정책·생활정보 블로그 pu
 
 ## 검토 기준
 
-1. **중복**: 최근 7일 내 발행글과 주제/대상/결론이 거의 동일한가? (시스템이 계산한 **Bigram 유사도** 힌트가 함께 제공됩니다. 수치가 높으면 중복 가능성이 높다는 신호.)
+1. **중복**: 최근 7일 내 발행글과 **동일 제도·사건·혜택**을 다루는가? (시스템이 계산한 **Bigram 유사도** 힌트가 함께 제공됩니다 — 수치가 높으면 제목 겹침이 많다는 신호지만 자동 판정 금지.)
+   - 중복 판단 원칙: **같은 기관/대상이어도 서로 다른 제도·발표·시행일·수치**를 다루면 **독립 기사**. 예: "기초연금 인상안 발표" 와 "기초연금 신청 방법 가이드" 는 별개.
+   - 진짜 중복 = 같은 이벤트/발표/제도를 다시 쓴 것 (같은 날짜·같은 수치·같은 액션).
 2. **팩트 정확성**: 원문 요약과 비교해 숫자·날짜·기관명·제도명에 오류 또는 날조가 있는가? (원문 fetch 실패 시 팩트 단정 불가 — 그 경우 팩트 검증은 스킵하고 그 사실만 issues 에 남길 것.)
 3. **가독성**: 한국어 맞춤법, 띄어쓰기, 어색한 문장, 반복/누락.
 4. **SEO 및 스타일 가이드 준수**: 제목 28~34자, 메타 110~140자, 슬러그 형식, 본문 700~1000단어, 핵심요약 박스/H2 2개+/FAQ 3개, 출처 링크, 존댓말 유지. (시스템이 계산한 **구조 메타** 가 함께 제공됩니다 — word_count, h2_count, faq_count, has_infobox 등. 이걸 근거로 빠르게 판정.)
@@ -320,29 +321,9 @@ def review_one_file(filepath: Path, recent_titles: list[str]) -> dict:
     # B: 구조 메타 pre-check
     structure = analyze_article_structure(body_only, meta)
 
-    # C: bigram 유사도 pre-check
+    # C: bigram 유사도는 힌트로만 Claude 에 전달 (자동 notify 없음)
     title = meta.get("title", "")
     similarity = best_bigram_overlap(title, recent_titles)
-    bigram_score, similar_title = similarity
-
-    # C: 유사도 임계 이상이면 Claude 호출 스킵하고 자동 notify
-    if bigram_score >= TITLE_BIGRAM_AUTO_NOTIFY:
-        logger.warning(
-            f"  bigram {bigram_score} ≥ {TITLE_BIGRAM_AUTO_NOTIFY} → 자동 notify (Claude 호출 스킵)"
-        )
-        return {
-            "_file": filepath.name,
-            "_meta": meta,
-            "_api_meta": {"input_tokens": 0, "output_tokens": 0, "model": "(skipped)"},
-            "action": "notify",
-            "reason": f"최근 7일 발행글과 제목 bigram 공통 {bigram_score}개 (임계 {TITLE_BIGRAM_AUTO_NOTIFY}) — 중복 확실",
-            "issues": [
-                f"현재 제목: {title}",
-                f"유사 제목: {similar_title}",
-                "Python bigram pre-filter 로 중복 판정됨. Claude 호출 없이 notify 분류.",
-            ],
-            "recommended_action": "삭제 또는 통합 (사람 판단)",
-        }
 
     # D: fetch 개선된 source summary
     source_url = meta.get("originalurl", "")
