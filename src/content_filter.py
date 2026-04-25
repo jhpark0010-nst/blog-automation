@@ -100,6 +100,9 @@ def filter_items(
 
     passed = []
     rejected = 0
+    # batch 내 dedup 용 — 같은 cron run 안에서 두 매체가 같은 사건 보도하면
+    # 둘 다 "신규" 라 recent_titles 만 비교하면 못 잡음. 통과한 제목을 누적해서 비교.
+    seen_titles = list(recent_titles)
 
     for item in items:
         title = item.get("title", "")
@@ -113,8 +116,8 @@ def filter_items(
             rejected += 1
             continue
 
-        # 2) 중복 체크
-        if is_similar(title, recent_titles):
+        # 2) 중복 체크 (recent_titles + 같은 batch 내 통과 항목)
+        if is_similar(title, seen_titles):
             logger.debug(f"  [제외] {title[:50]} — 유사 글 존재")
             rejected += 1
             continue
@@ -147,6 +150,7 @@ def filter_items(
 
         item["filter_reason"] = " | ".join(reasons) if reasons else "기본 통과"
         passed.append(item)
+        seen_titles.append(title)  # batch 내 dedup 누적
         logger.info(f"  [통과] {title[:50]} — {item['filter_reason']}")
 
     logger.info(f"[필터링] 전체 {len(items)}건 → 통과 {len(passed)}건, 제외 {rejected}건")

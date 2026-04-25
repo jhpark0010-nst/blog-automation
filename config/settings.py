@@ -96,7 +96,9 @@ PENDING_MAX_AGE_DAYS = 7
 EVAL_BATCH_SIZE = 30  # 1회 처리 최대 건수
 
 # ── Writer ──
-# 정책/생활정보 심층 재구성. K-pop 번역(300~500) 보다 상당히 길다.
-WRITER_TARGET_WORD_COUNT_MIN = 700
-WRITER_TARGET_WORD_COUNT_MAX = 1000
+# 정책/생활정보 재구성. 한국어 어절 기준 (영어 word 와 다름).
+# 2026-04-25 실측: Claude 가 700+ 어절 일괄 생성을 어려워해 평균 410 출력.
+# 모바일 가독성도 1500~2000자가 적정 → 기준 현실화.
+WRITER_TARGET_WORD_COUNT_MIN = 400  # 어절
+WRITER_TARGET_WORD_COUNT_MAX = 700  # 어절
 WRITER_ARTICLES_PER_RUN = 1  # 1회 실행당 1건 (사용자 지시)

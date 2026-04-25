@@ -77,7 +77,7 @@ SYSTEM_PROMPT_BASE = f"""당신은 publickorea.org (한국 정부정책·생활�
 }}
 ```
 
-## body_html 구조 (필수, 총 {WRITER_TARGET_WORD_COUNT_MIN}~{WRITER_TARGET_WORD_COUNT_MAX}단어)
+## body_html 구조 (필수, 총 {WRITER_TARGET_WORD_COUNT_MIN}~{WRITER_TARGET_WORD_COUNT_MAX} 어절 = 한국어 단어 ≈ 약 1300~2000자)
 
 1. **리드 문단 1개** — 메인 키워드 + 숫자/날짜. 2~3문장.
 2. **핵심 요약 인포박스 1개** — 3~4줄 불릿.
