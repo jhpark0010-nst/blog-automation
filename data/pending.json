@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-25T07:00:46.674760",
+  "last_updated": "2026-04-25T08:30:48.020596",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260419043100001",
@@ -6545,6 +6545,40 @@
       "evaluated_at": null,
       "score": null,
       "filter_reason": "키워드: 할인 | 금액/혜택 명시"
+    },
+    {
+      "guid": "https://www.yna.co.kr/view/AKR20260425039500003",
+      "source": "연합뉴스_경제",
+      "title": "GS건설, 서울 성동구 성수1지구 재개발 시공사로 선정",
+      "link": "https://www.yna.co.kr/view/AKR20260425039500003",
+      "published": "2026-04-25T17:02:47+09:00",
+      "summary": "(서울=연합뉴스) 홍국기 기자 = GS건설이 서울 성동구 성수전략정비구역1지구(성수1지구) 재개발 사업의 시공사에 선정됐다.",
+      "content": "GS건설이 서울 성동구 성수전략정비구역1지구 재개발 사업의 시공사에 선정됐다.\n25일 도시정비업계에 따르면 성수1지구 재개발 조합은 이날 성수동2가 성락성결교회에서 열린 정기총회에서 지난 2월과 3월 두 차례 진행된 입찰에 단독으로 응찰한 GS건설을 시공사로 선정하는 안건을 가결했다.\n도시주거환경정비법상 시공사 선정은 경쟁 입찰을 원칙으로 하며, 단독 응찰로 2회 이상 유찰될 경우 수의계약으로 전환이 가능해진다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
+      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/25/AKR20260425039500003_01_i_P2.jpg",
+      "category": "경제",
+      "priority": 2,
+      "collected_at": "2026-04-25T08:30:41.218277",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 주거"
+    },
+    {
+      "guid": "https://www.yna.co.kr/view/AKR20260425036000061",
+      "source": "연합뉴스_사회",
+      "title": "하남 컨테이너서 불…일용직 근로자 1명 사망",
+      "link": "https://www.yna.co.kr/view/AKR20260425036000061",
+      "published": "2026-04-25T15:59:34+09:00",
+      "summary": "(하남=연합뉴스) 이영주 기자 = 25일 오전 1시께 경기도 하남시 천현동에 있는 컨테이너에서 불이 나 1시간 20분 만에 진화됐다.",
+      "content": "25일 오전 1시께 경기도 하남시 천현동에 있는 컨테이너에서 불이 나 1시간 20분 만에 진화됐다.\n이 불로 컨테이너 건물에 있던 40대 A씨가 숨졌다.\n또 컨테이너 등 2개 건물이 전소했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
+      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/25/AKR20260425036000061_01_i_P2.jpg",
+      "category": "사회",
+      "priority": 2,
+      "collected_at": "2026-04-25T08:30:47.961432",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 근로"
     }
   ]
 }
