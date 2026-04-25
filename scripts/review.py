@@ -81,6 +81,14 @@ SYSTEM_PROMPT_BASE = """당신은 한국 정부정책·생활정보 블로그 pu
 2. **팩트 정확성**: 원문 요약과 비교해 숫자·날짜·기관명·제도명에 오류 또는 날조가 있는가? (원문 fetch 실패 시 팩트 단정 불가 — 그 경우 팩트 검증은 스킵하고 그 사실만 issues 에 남길 것.)
 3. **가독성**: 한국어 맞춤법, 띄어쓰기, 어색한 문장, 반복/누락.
 4. **SEO 및 스타일 가이드 준수**: 제목 28~34자, 메타 110~140자, 슬러그 형식, **본문 400~700 어절(한국어 단어)**, 핵심요약 박스/H2 2개+/FAQ 3개, 출처 링크, 존댓말 유지. (시스템이 계산한 **구조 메타** 가 함께 제공됩니다 — word_count, h2_count, faq_count, has_infobox 등. word_count 가 400~700 범위면 통과로 보세요. 350 미만이거나 800 초과만 FIX.)
+5. **AI 작성 흔적 (중요)**: AdSense 정책상 자동 생성 콘텐츠는 게재 거부 대상입니다. 시스템이 계산한 `ai_phrase_count` 와 `ai_phrase_examples` 메타가 제공됩니다. **4 이상이면 AI 흔적 농후**로 판단해 FIX 로 자연스럽게 다시 쓰세요. 추가로 본문을 직접 읽으며 다음 패턴이 보이면 같이 수정:
+   - 식상한 클리셰 ("결론적으로", "종합적으로 살펴보면", "한층 더 나은", "보다 효율적인")
+   - 추상적 형용사 남발 ("다양한", "체계적인", "효율적인", "전략적인" 등이 반복)
+   - 모호한 양태 ("있을 수 있습니다", "도움이 될 수 있습니다") 가 반복
+   - 거창한 시작 ("본격적으로", "바야흐로")
+   - 사실 없는 권유체 ("적극 활용해 보시기 바랍니다", "꼭 챙겨보시기 바랍니다") 마무리
+
+   대안: 구체적 사실·숫자·기관명을 그대로 두고 어색한 부사·형용사·연결어만 사람이 쓸 법한 표현으로 교체. **정보는 절대 빼지 말 것.**
 
 ## 출력
 
@@ -199,11 +207,59 @@ def count_words(text: str) -> int:
     return len(plain.split())
 
 
+# 한국어 AI 작성 흔적 패턴 (publickorea 정책글 톤 기준)
+# 정상 사용 가능한 표현은 제외, 명백히 AI 가 남발하는 것만 포함.
+AI_PHRASE_PATTERNS_KR = [
+    # 클리셰 마무리/요약
+    r"결론적으로",
+    r"종합적으로\s*(?:살펴보|보)",
+    r"종합해\s*보면",
+    r"정리해\s*보면",
+    # 식상한 강조 부사
+    r"한층\s*더",
+    r"보다\s*나은",
+    r"보다\s*더",
+    r"한걸음\s*더",
+    # 추상적 형용사 남발 (AI 자주 씀)
+    r"체계적(?:인|으로|이고)",
+    r"효율적(?:인|으로|이고)",
+    r"전략적(?:인|으로|이고)",
+    # 모호한 양태 표현
+    r"있을\s*수\s*있습니다",
+    r"~ㄹ\s*수\s*있을\s*것입니다",
+    # 흔한 AI 권유체
+    r"꼭\s*챙겨보시기\s*바랍니다",
+    r"적극\s*활용해\s*보시기\s*바랍니다",
+    r"많은\s*관심\s*부탁드립니다",
+    # 거창한 시작
+    r"본격적으로",
+    r"바야흐로",
+]
+
+
+def count_ai_phrases(plain_text: str, patterns: list[str]) -> tuple[int, list[str]]:
+    """본문 텍스트에서 AI 의심 표현 매칭 수 + 매칭된 예시 (중복 제거 5개)."""
+    matches = []
+    for pat in patterns:
+        for m in re.finditer(pat, plain_text):
+            matches.append(m.group(0).strip())
+    seen = set()
+    examples = []
+    for m in matches:
+        if m not in seen:
+            seen.add(m)
+            examples.append(m)
+        if len(examples) >= 5:
+            break
+    return len(matches), examples
+
+
 def analyze_article_structure(body_html: str, meta: dict) -> dict:
     """Python 측 pre-check 메타. Claude 에게 판단 힌트로 전달.
 
     리턴: word_count, h2_count, faq_count, has_infobox, has_source_link,
-    has_wp_post_id, image_count, raw_quote_in_body
+    has_wp_post_id, image_count, raw_quote_count_in_body,
+    ai_phrase_count, ai_phrase_examples.
     """
     h2_count = len(re.findall(r"<h2[^>]*>", body_html, re.IGNORECASE))
     faq_count = len(re.findall(r"<details[^>]*>", body_html, re.IGNORECASE))
@@ -217,9 +273,10 @@ def analyze_article_structure(body_html: str, meta: dict) -> dict:
     )
     has_wp_post_id = bool(meta.get("wppostid"))
 
-    # 본문 텍스트(태그 제외) 에 ASCII 큰따옴표가 2개 이상이면 쌍으로 있을 가능성
     plain = TAG_STRIP_RE.sub(" ", body_html)
     raw_quote_count = plain.count('"')
+
+    ai_count, ai_examples = count_ai_phrases(plain, AI_PHRASE_PATTERNS_KR)
 
     return {
         "word_count": count_words(body_html),
@@ -230,6 +287,8 @@ def analyze_article_structure(body_html: str, meta: dict) -> dict:
         "has_source_link": has_source_link,
         "has_wp_post_id": has_wp_post_id,
         "raw_quote_count_in_body": raw_quote_count,
+        "ai_phrase_count": ai_count,
+        "ai_phrase_examples": ai_examples,
     }
 
 
