@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T07:00:49.825987",
+  "last_updated": "2026-04-27T08:01:15.134725",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -1156,23 +1156,6 @@
       "evaluated_at": "2026-04-20T07:34:25.975850",
       "score": 81,
       "filter_reason": "키워드: 신청, 연금"
-    },
-    {
-      "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756665&call_from=rsslink",
-      "source": "정책브리핑_보도자료",
-      "title": "[국토교통부]지역주택조합 '희망고문' 멈춘다… &quot;조합원 피해 예방 및 사업 정상화 방안 발표&quot;",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756665&call_from=rsslink",
-      "published": "Mon, 20 Apr 2026 07:00:00 GMT",
-      "summary": "지역주택조합 '희망고문' 멈춘다… \"조합원 피해 예방 및 사업 정상화 방안 발표\" 관련 보도자료 내용입니다. 자세한 내용은 첨부파일을 참고하시기 바랍니다.[자료제공 :(www.korea.kr)]",
-      "content": "",
-      "thumbnail_url": "https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif",
-      "category": "정책",
-      "priority": 1,
-      "collected_at": "2026-04-20T08:00:35.080427",
-      "status": "passed",
-      "evaluated_at": "2026-04-20T09:47:14.138052",
-      "score": 82,
-      "filter_reason": "키워드: 교통"
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756660&call_from=rsslink",
