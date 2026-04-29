@@ -156,11 +156,19 @@ def slack_notify(text: str) -> None:
 
 
 def pick_one_candidate(items: list[dict]) -> dict | None:
-    """score 상위 3건 중 collected_at 최신 1건 선택 (사용자 Routine 원본 로직)."""
+    """(score 내림차순, collected_at 내림차순) 첫 후보.
+
+    이전 'score top3 중 collected_at 최신' 로직은 score 80 동점 후보가 100건+ 일 때
+    stable sort 가 첫 3개 (= 가장 오래된 04-17 후보들) 만 top3 에 넣어 매번 그 안에서
+    무한 반복 픽되는 문제 있었음. tuple 정렬로 score 동점 시 최신 우선 보장.
+    """
     if not items:
         return None
-    top3 = sorted(items, key=lambda x: x.get("score", 0), reverse=True)[:3]
-    return sorted(top3, key=lambda x: x.get("collected_at", ""), reverse=True)[0]
+    return sorted(
+        items,
+        key=lambda x: (x.get("score", 0), x.get("collected_at", "")),
+        reverse=True,
+    )[0]
 
 
 def build_user_message(item: dict) -> str:

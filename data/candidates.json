@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T03:00:49.642295",
+  "last_updated": "2026-04-29T13:32:53.338193",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -17,23 +17,6 @@
       "status": "passed",
       "evaluated_at": "2026-04-18T12:20:00",
       "score": 71
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417101400530_eco",
-      "source": "연합뉴스_경제",
-      "title": "기초연금 수급자라면…통신비 할인과 일자리 등 혜택 챙겨야",
-      "link": "https://www.yna.co.kr/view/AKR20260417101400530",
-      "published": "2026-04-18T06:11:01+09:00",
-      "summary": "(서울=연합뉴스) 서한기 기자 = 만 65세 이상 어르신의 노후 생활을 돕기 위해 지급되는 기초연금 외에도 수급자들이 놓치지 말아야 할 알짜혜택...",
-      "content": "만 65세 이상 어르신의 노후 생활을 돕기 위해 지급되는 기초연금 외에도 수급자들이 놓치지 말아야 할 알짜혜택들이 운영되고 있다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/cms/2023/02/21/30/PCM20230221000030990_P2.jpg",
-      "category": "경제",
-      "priority": 2,
-      "collected_at": "2026-04-17T23:00:48.149210",
-      "filter_reason": "키워드: 할인, 신청, 일자리, 연금",
-      "status": "passed",
-      "evaluated_at": "2026-04-18T12:20:00",
-      "score": 85
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417120600004",
