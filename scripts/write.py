@@ -28,10 +28,16 @@ from config.settings import (
 )
 from scripts.publish_drafts import publish_single_draft
 from src.anthropic_helper import call_json, estimate_cost_usd
+from src.content_filter import is_similar
 
 SLACK_WEBHOOK = os.environ.get("SLACK_WEBHOOK_URL", "")
 DRAFTS_DIR = PROJECT_ROOT / "data" / "drafts"
+PUBLISHED_DIR = DRAFTS_DIR / "published"
 DRAFTS_DIR.mkdir(parents=True, exist_ok=True)
+
+# 발행 직전 중복 체크 윈도우 (일). collect 단계 dedup 이 잡지 못한
+# "candidates 머무는 사이 발행된 유사글" 케이스 방어.
+WRITER_DEDUP_DAYS = 7
 
 logging.basicConfig(
     level=logging.INFO,
@@ -155,20 +161,74 @@ def slack_notify(text: str) -> None:
         logger.warning(f"Slack 알림 실패: {e}")
 
 
-def pick_one_candidate(items: list[dict]) -> dict | None:
-    """(score 내림차순, collected_at 내림차순) 첫 후보.
+def _recent_published_titles(days: int = WRITER_DEDUP_DAYS) -> list[str]:
+    """data/drafts/published/*.html 중 최근 N일 내 발행글 제목 리스트.
 
-    이전 'score top3 중 collected_at 최신' 로직은 score 80 동점 후보가 100건+ 일 때
-    stable sort 가 첫 3개 (= 가장 오래된 04-17 후보들) 만 top3 에 넣어 매번 그 안에서
-    무한 반복 픽되는 문제 있었음. tuple 정렬로 score 동점 시 최신 우선 보장.
+    HTML 주석의 PublishedAt(우선) 또는 Created 기준. mtime 은 actions/checkout
+    이 덮어써서 GitHub Actions 환경에서 신뢰 못 함.
     """
+    if not PUBLISHED_DIR.exists():
+        return []
+    now = datetime.now()
+    titles: list[str] = []
+    for html_path in PUBLISHED_DIR.glob("*.html"):
+        text = html_path.read_text(encoding="utf-8")[:3000]
+        # 주석 메타에서 Title + Created/PublishedAt 추출
+        title = None
+        created_str = None
+        for m in re.finditer(r"<!--(.*?)-->", text, re.DOTALL):
+            for line in m.group(1).splitlines():
+                if ":" not in line:
+                    continue
+                k, _, v = line.partition(":")
+                k = k.strip().lower()
+                v = v.strip()
+                if k == "title" and not title:
+                    title = v
+                elif k in ("publishedat", "created") and not created_str:
+                    created_str = v
+        if not title or not created_str:
+            continue
+        try:
+            dt = datetime.fromisoformat(created_str)
+            dt_naive = dt.replace(tzinfo=None) if dt.tzinfo else dt
+        except ValueError:
+            continue
+        if (now - dt_naive).total_seconds() > days * 86400:
+            continue
+        titles.append(title)
+    return titles
+
+
+def pick_one_candidate(items: list[dict]) -> tuple[dict | None, list[str]]:
+    """(score 내림차순, collected_at 내림차순) 정렬 후 최근 발행과 중복 안 되는 첫 후보.
+
+    중복으로 스킵된 후보 guid 리스트도 함께 반환 → main 에서 candidates 정리 시 사용.
+    """
+    skipped_guids: list[str] = []
     if not items:
-        return None
-    return sorted(
+        return None, skipped_guids
+
+    sorted_items = sorted(
         items,
         key=lambda x: (x.get("score", 0), x.get("collected_at", "")),
         reverse=True,
-    )[0]
+    )
+
+    recent_titles = _recent_published_titles()
+    if recent_titles:
+        logger.info(f"최근 {WRITER_DEDUP_DAYS}일 발행글 제목 비교 대상: {len(recent_titles)}건")
+
+    for cand in sorted_items:
+        title = cand.get("title", "")
+        # is_similar: 한국어 bigram 8 공통 이상이면 유사 (collect 단계와 동일 임계)
+        if recent_titles and is_similar(title, recent_titles):
+            logger.warning(f"  [스킵] 최근 발행과 유사: {title[:60]}")
+            skipped_guids.append(cand.get("guid", ""))
+            continue
+        return cand, skipped_guids
+
+    return None, skipped_guids
 
 
 def build_user_message(item: dict) -> str:
@@ -393,10 +453,24 @@ def main() -> int:
         slack_notify("⏸️ *Writer*: 작성 후보 없음")
         return 0
 
-    # 1건 선택 (상위 3 중 최신)
-    selected = pick_one_candidate(items)
+    # 1건 선택 (점수+최신 우선, 최근 7일 발행과 중복인 후보 자동 스킵)
+    selected, skipped_guids = pick_one_candidate(items)
+
+    # 발행 중복으로 스킵된 후보들을 candidates 에서 제거 (다음 cron 에서 또 픽되지 않게)
+    if skipped_guids:
+        skip_set = set(skipped_guids)
+        new_items = [i for i in items if i.get("guid", "") not in skip_set]
+        save_json(CANDIDATES_PATH, {
+            "last_updated": datetime.now().isoformat(),
+            "items": new_items,
+        })
+        logger.info(f"중복 스킵된 후보 {len(skipped_guids)}건 candidates 에서 제거")
+
     if not selected:
-        slack_notify("⏸️ *Writer*: 작성 후보 없음")
+        slack_notify(
+            f"⏸️ *Writer*: 작성 후보 없음"
+            + (f" (최근 발행 중복으로 {len(skipped_guids)}건 스킵)" if skipped_guids else "")
+        )
         return 0
 
     result = process_one_candidate(selected, 1, 1)
