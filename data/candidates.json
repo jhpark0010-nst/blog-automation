@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T05:00:47.451508",
+  "last_updated": "2026-05-02T06:01:26.164233",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -51,23 +51,6 @@
       "status": "passed",
       "evaluated_at": "2026-04-18T14:25:37",
       "score": 72
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417126700002",
-      "source": "연합뉴스_경제",
-      "title": "새출발기금 신청자 19만명…채무액 30조원 넘어",
-      "link": "https://www.yna.co.kr/view/AKR20260417126700002",
-      "published": "2026-04-17T16:33:27+09:00",
-      "summary": "(서울=연합뉴스) 강류나 기자 = 소상공인·자영업자 채무조정 프로그램인 '새출발기금' 채무조정 신청액이 30조원을 넘었다.",
-      "content": "소상공인·자영업자 채무조정 프로그램인 '새출발기금' 채무조정 신청액이 30조원을 넘었다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/cms/2026/03/29/48/PCM20260329000048895_P2.jpg",
-      "category": "경제",
-      "priority": 2,
-      "collected_at": "2026-04-17T09:01:31.410116",
-      "filter_reason": "키워드: 신청 | 금액/혜택 명시",
-      "status": "passed",
-      "evaluated_at": "2026-04-18T14:25:37",
-      "score": 80
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756300&call_from=rsslink",
