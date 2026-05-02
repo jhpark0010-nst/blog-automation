@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T07:00:36.647523",
+  "last_updated": "2026-05-02T08:01:19.695742",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -136,23 +136,6 @@
       "evaluated_at": "2026-04-19T00:31:44.573599",
       "score": 76,
       "filter_reason": "키워드: 접수"
-    },
-    {
-      "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756362&call_from=rsslink",
-      "source": "정책브리핑_보도자료",
-      "title": "[행정안전부]고유가 피해지원금의 차질없는 지급 위해 민-관이 힘 합친다",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756362&call_from=rsslink",
-      "published": "Fri, 17 Apr 2026 08:00:00 GMT",
-      "summary": "행정안전부는 4월 17일(금) 고유가 피해지원금의 신속하고 안정적인 지급을 위해 금융위원회, 대한민국 시장·군수·구청장 협의회, 시중 9개 카드사 및 인터넷은행(카카오뱅크, 케이뱅크, 토스뱅크), 핀테크사(네이버페이, 카카오페이)와 업무협약식을 개최한다.자세한 내용은 첨부를 참고하시기 바랍니다.* 담당자 : 재정정책과 정솔희(044-205-3723)[자료제공 :(www.korea.kr)]",
-      "content": "",
-      "thumbnail_url": "https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif",
-      "category": "정책",
-      "priority": 1,
-      "collected_at": "2026-04-17T09:00:34.108966",
-      "filter_reason": "키워드: 지원금 | 금액/혜택 명시",
-      "status": "passed",
-      "evaluated_at": "2026-04-19T01:24:04.420250",
-      "score": 80
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260419016900003",
@@ -1700,23 +1683,6 @@
       "evaluated_at": "2026-04-22T10:03:35.769135",
       "score": 70,
       "filter_reason": "키워드: 접수, 근로"
-    },
-    {
-      "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156757157&call_from=rsslink",
-      "source": "정책브리핑_보도자료",
-      "title": "[행정안전부]행정안전부 장관, 강풍&middot;건조 등 산불위험 고조에 따른 산불방지 특별 지시",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156757157&call_from=rsslink",
-      "published": "Wed, 22 Apr 2026 07:00:00 GMT",
-      "summary": "윤호중 행정안전부 장관은 강원 영동과 경북지역을 중심으로 강한 바람과 건조한 날씨로 산불 위험이 높아짐에 따라, 산림청, 지방정부 등 관계기관에 산불 예방과 선제적인 대응을 위한 특별 지시를 내렸다.자세한 내용은 첨부를 참고하시기 바랍니다.* 담당자 : 환경산림재난대응과 고용석(044-205-6171)[자료제공 :(www.korea.kr)]",
-      "content": "",
-      "thumbnail_url": "https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif",
-      "category": "정책",
-      "priority": 1,
-      "collected_at": "2026-04-22T10:00:55.225853",
-      "status": "passed",
-      "evaluated_at": "2026-04-22T10:03:35.769139",
-      "score": 79,
-      "filter_reason": "기본 통과"
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260422155200004",
