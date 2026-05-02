@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T11:00:34.201448",
+  "last_updated": "2026-05-02T12:01:15.604611",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -1224,23 +1224,6 @@
       "evaluated_at": "2026-04-21T01:03:04.510792",
       "score": 78,
       "filter_reason": "키워드: 병원 | 금액/혜택 명시"
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260421064300004",
-      "source": "연합뉴스_사회",
-      "title": "방학 기간 실무경험 쌓는 '서울영커리언스' 인턴십 150명 모집",
-      "link": "https://www.yna.co.kr/view/AKR20260421064300004",
-      "published": "2026-04-21T11:15:01+09:00",
-      "summary": "(서울=연합뉴스) 황재하 기자 = 서울시는 '서울영커리언스 사업' 3단계인 인턴십 여름학기 참여자 150명을 모집한다고 21일 밝혔다.",
-      "content": "",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/21/AKR20260421064300004_01_i_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-21T03:02:18.441748",
-      "status": "passed",
-      "evaluated_at": "2026-04-21T06:04:10.281183",
-      "score": 79,
-      "filter_reason": "키워드: 모집"
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260421068100062",
