@@ -77,7 +77,7 @@ SYSTEM_PROMPT_BASE = f"""당신은 publickorea.org (한국 정부정책·생활�
 
 ## 출력 스키마
 
-**raw JSON 1개만 반환** (마크다운 코드블록 금지). 필드:
+**raw JSON 1개만 반환**. 응답의 첫 글자는 반드시 `{` 이고 마지막 글자는 `}` 입니다. 마크다운 코드블록 금지, 자연어 설명 금지 (예: "I need to work with..."), 응답 앞뒤 어떤 prefix/suffix 도 없이 순수 JSON 객체만. 필드:
 
 ```
 {{
