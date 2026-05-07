@@ -250,18 +250,20 @@ def claude_semantic_dedup_check(
         return False, ""
 
 
-def pick_one_candidate(items: list[dict]) -> tuple[dict | None, list[str]]:
-    """(score 내림차순, collected_at 내림차순) 정렬 후 최근 발행과 중복 안 되는 첫 후보.
+def pick_candidates(items: list[dict], n: int) -> tuple[list[dict], list[str]]:
+    """(score 내림차순, collected_at 내림차순) 정렬 후 최대 n 건 픽.
 
-    2층 dedup:
-    1) 텍스트 bigram (is_similar, 임계 8)
-    2) Claude 의미 기반 (Haiku 호출)
+    3층 dedup, 모두 통과한 후보만 picked 에 들어감:
+    1) 텍스트 bigram (is_similar, 임계 8) — 최근 발행 + 같은 batch 이미 픽된 것
+    2) Claude 의미 기반 (Haiku) — 최근 발행 + 같은 batch 이미 픽된 것
+    3) 같은 batch 내 dedup 자동 처리 (seen_titles 누적)
 
-    중복으로 스킵된 후보 guid 리스트도 함께 반환 → main 에서 candidates 정리 시 사용.
+    Returns: (picked_list, skipped_guids).
+    n=1 이면 단건 픽처럼 동작. n>1 이면 같은 cron 내 비슷한 후보 동시 픽 차단.
     """
     skipped_guids: list[str] = []
     if not items:
-        return None, skipped_guids
+        return [], skipped_guids
 
     sorted_items = sorted(
         items,
@@ -273,24 +275,36 @@ def pick_one_candidate(items: list[dict]) -> tuple[dict | None, list[str]]:
     if recent_titles:
         logger.info(f"최근 {WRITER_DEDUP_DAYS}일 발행글 제목 비교 대상: {len(recent_titles)}건")
 
+    picked: list[dict] = []
+    seen_titles = list(recent_titles)  # batch 진행 따라 누적
+
     for cand in sorted_items:
+        if len(picked) >= n:
+            break
         title = cand.get("title", "")
         # 1) 텍스트 bigram 8 공통 이상 = 유사 (collect 단계와 동일 임계)
-        if recent_titles and is_similar(title, recent_titles):
-            logger.warning(f"  [스킵-bigram] 최근 발행과 유사: {title[:60]}")
+        if seen_titles and is_similar(title, seen_titles):
+            logger.warning(f"  [스킵-bigram] 최근/intra-batch 유사: {title[:60]}")
             skipped_guids.append(cand.get("guid", ""))
             continue
         # 2) Claude 의미 기반 — bigram 못 잡는 동일 사건 다른 표현 케이스
-        is_dup, matched = claude_semantic_dedup_check(cand, recent_titles)
+        is_dup, matched = claude_semantic_dedup_check(cand, seen_titles)
         if is_dup:
             logger.warning(
                 f"  [스킵-semantic] {title[:55]} ↔ {matched[:40]}"
             )
             skipped_guids.append(cand.get("guid", ""))
             continue
-        return cand, skipped_guids
+        picked.append(cand)
+        seen_titles.append(title)  # 같은 batch 내 후속 픽이 비교할 풀에 누적
 
-    return None, skipped_guids
+    return picked, skipped_guids
+
+
+def pick_one_candidate(items: list[dict]) -> tuple[dict | None, list[str]]:
+    """[deprecated wrapper] N=1 케이스 호환용. 신규 코드는 pick_candidates 사용."""
+    picked, skipped = pick_candidates(items, 1)
+    return (picked[0] if picked else None), skipped
 
 
 def build_user_message(item: dict) -> str:
@@ -515,8 +529,8 @@ def main() -> int:
         slack_notify("⏸️ *Writer*: 작성 후보 없음")
         return 0
 
-    # 1건 선택 (점수+최신 우선, 최근 7일 발행과 중복인 후보 자동 스킵)
-    selected, skipped_guids = pick_one_candidate(items)
+    # 후보 픽 (점수+최신 우선, 최근 발행 + intra-batch + Claude semantic dedup 자동 적용)
+    selected, skipped_guids = pick_candidates(items, WRITER_ARTICLES_PER_RUN)
 
     # 발행 중복으로 스킵된 후보들을 candidates 에서 제거 (다음 cron 에서 또 픽되지 않게)
     if skipped_guids:
@@ -531,38 +545,61 @@ def main() -> int:
     if not selected:
         slack_notify(
             f"⏸️ *Writer*: 작성 후보 없음"
-            + (f" (최근 발행 중복으로 {len(skipped_guids)}건 스킵)" if skipped_guids else "")
+            + (f" (중복으로 {len(skipped_guids)}건 스킵)" if skipped_guids else "")
         )
         return 0
 
-    result = process_one_candidate(selected, 1, 1)
+    actual_n = len(selected)
+    logger.info(f"선택: {actual_n}건")
 
-    api_meta = result.get("api_meta") or {}
-    total_in = api_meta.get("input_tokens", 0)
-    total_out = api_meta.get("output_tokens", 0)
-    model_used = api_meta.get("model", "?")
+    results = []
+    total_in = total_out = 0
+    model_used = "?"
+
+    for idx, cand in enumerate(selected, 1):
+        result = process_one_candidate(cand, idx, actual_n)
+        results.append(result)
+
+        api_meta = result.get("api_meta") or {}
+        total_in += api_meta.get("input_tokens", 0)
+        total_out += api_meta.get("output_tokens", 0)
+        if api_meta.get("model"):
+            model_used = api_meta["model"]
+
+        status = result["status"]
+        if status == "success":
+            slack_notify(
+                f"✍️📝 *작성+발행 완료* ({idx}/{actual_n})\n"
+                f"제목: {result['title']}\n"
+                f"WordPress: {result.get('link', '-')}\n"
+                f"candidates 남음: {result.get('candidates_remaining', '?')}건"
+            )
+        elif status in ("failed", "api_failed", "schema_failed"):
+            slack_notify(
+                f"❌ *Writer 실패* ({idx}/{actual_n})\n"
+                f"제목: {result.get('title', result.get('original_title', '-'))}\n"
+                f"에러: {str(result.get('error', ''))[:300]}"
+            )
+        else:
+            slack_notify(
+                f"⚠️ *Writer 종료* ({idx}/{actual_n}, status={status}): "
+                f"{result.get('title', '-')}"
+            )
+
     cost = estimate_cost_usd(total_in, total_out, model_used)
+    success_count = sum(1 for r in results if r["status"] == "success")
+    failed_count = len(results) - success_count
 
-    status = result["status"]
-    if status == "success":
-        slack_notify(
-            f"✍️📝 *작성+발행 완료*\n"
-            f"제목: {result['title']}\n"
-            f"WordPress: {result.get('link', '-')}\n"
-            f"candidates 남음: {result.get('candidates_remaining', '?')}건\n"
-            f"모델: {model_used} | 토큰 {total_in}in/{total_out}out | 약 ${cost:.4f}"
-        )
-        return 0
-    elif status in ("failed", "api_failed", "schema_failed"):
-        slack_notify(
-            f"❌ *Writer 실패*\n"
-            f"제목: {result.get('title', result.get('original_title', '-'))}\n"
-            f"에러: {str(result.get('error', ''))[:300]}"
-        )
-        return 1
-    else:
-        slack_notify(f"⚠️ *Writer 종료 (status={status})*: {result.get('title', '-')}")
-        return 1
+    summary = (
+        f"🏁 *Writer 완료*\n"
+        f"처리: {len(results)}건 (성공 {success_count} / 실패 {failed_count})\n"
+        f"모델: {model_used} | 토큰 {total_in}in/{total_out}out | 약 ${cost:.4f}"
+    )
+    logger.info(summary)
+    if actual_n > 1:
+        slack_notify(summary)
+
+    return 0 if failed_count == 0 else 1
 
 
 if __name__ == "__main__":
