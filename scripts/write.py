@@ -200,8 +200,62 @@ def _recent_published_titles(days: int = WRITER_DEDUP_DAYS) -> list[str]:
     return titles
 
 
+def claude_semantic_dedup_check(
+    candidate: dict, recent_titles: list[str]
+) -> tuple[bool, str]:
+    """Claude 의미 기반 중복 체크. bigram 으론 못 잡는 같은 사건 다른 헤드라인 케이스 대응.
+
+    예: 동일 정책 발표를 정책브리핑 vs 연합뉴스가 표현 완전 다르게 보도하는 케이스.
+    Haiku 사용으로 호출당 ~$0.001. 실패 시 안전 모드 = 통과.
+    Returns: (is_duplicate, matched_title).
+    """
+    if not recent_titles:
+        return False, ""
+
+    title = candidate.get("title", "")
+    summary = (candidate.get("summary", "") or "")[:300]
+
+    sample = recent_titles[:30]
+    system = (
+        "당신은 한국 정부정책·생활정보 블로그의 편집자다. "
+        "새 후보 기사가 최근 발행된 글들과 같은 제도/사건/혜택을 다루는지 판단한다. "
+        "같은 제도/사건이지만 헤드라인 표현만 다르면 중복(duplicate). "
+        "같은 기관·대상이라도 다른 제도·발표·시행일을 다루면 독립 기사(NOT duplicate)."
+    )
+    user = (
+        "새 후보:\n"
+        f"제목: {title}\n"
+        f"요약: {summary}\n\n"
+        "최근 발행된 글 제목 목록:\n"
+        + "\n".join(f"- {t}" for t in sample)
+        + "\n\n새 후보가 위 목록 중 하나와 같은 사건/제도/혜택을 다루는가? "
+        + 'raw JSON 만 반환: {"is_duplicate": true|false, "matched": "정확히 일치하는 제목 또는 빈 문자열"}'
+    )
+
+    try:
+        model = (
+            os.environ.get("CLAUDE_MODEL_REVIEW", "").strip()
+            or "claude-haiku-4-5-20251001"
+        )
+        result, _ = call_json(
+            system=system,
+            user=user,
+            max_tokens=200,
+            temperature=0.1,
+            model=model,
+        )
+        return bool(result.get("is_duplicate", False)), str(result.get("matched", ""))
+    except Exception as e:
+        logger.warning(f"Claude dedup 체크 실패 (통과 처리): {e}")
+        return False, ""
+
+
 def pick_one_candidate(items: list[dict]) -> tuple[dict | None, list[str]]:
     """(score 내림차순, collected_at 내림차순) 정렬 후 최근 발행과 중복 안 되는 첫 후보.
+
+    2층 dedup:
+    1) 텍스트 bigram (is_similar, 임계 8)
+    2) Claude 의미 기반 (Haiku 호출)
 
     중복으로 스킵된 후보 guid 리스트도 함께 반환 → main 에서 candidates 정리 시 사용.
     """
@@ -221,9 +275,17 @@ def pick_one_candidate(items: list[dict]) -> tuple[dict | None, list[str]]:
 
     for cand in sorted_items:
         title = cand.get("title", "")
-        # is_similar: 한국어 bigram 8 공통 이상이면 유사 (collect 단계와 동일 임계)
+        # 1) 텍스트 bigram 8 공통 이상 = 유사 (collect 단계와 동일 임계)
         if recent_titles and is_similar(title, recent_titles):
-            logger.warning(f"  [스킵] 최근 발행과 유사: {title[:60]}")
+            logger.warning(f"  [스킵-bigram] 최근 발행과 유사: {title[:60]}")
+            skipped_guids.append(cand.get("guid", ""))
+            continue
+        # 2) Claude 의미 기반 — bigram 못 잡는 동일 사건 다른 표현 케이스
+        is_dup, matched = claude_semantic_dedup_check(cand, recent_titles)
+        if is_dup:
+            logger.warning(
+                f"  [스킵-semantic] {title[:55]} ↔ {matched[:40]}"
+            )
             skipped_guids.append(cand.get("guid", ""))
             continue
         return cand, skipped_guids
