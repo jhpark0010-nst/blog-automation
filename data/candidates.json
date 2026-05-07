@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T09:00:57.723753",
+  "last_updated": "2026-05-07T10:01:22.476563",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -1989,23 +1989,6 @@
       "evaluated_at": "2026-04-24T11:00:47.845250",
       "score": 72,
       "filter_reason": "키워드: 세금, 공제"
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260424077300530",
-      "source": "연합뉴스_사회",
-      "title": "건보료 4월 정산 1천35만명 추가납부…실시간 부과 논쟁 재점화",
-      "link": "https://www.yna.co.kr/view/AKR20260424077300530",
-      "published": "2026-04-25T06:11:00+09:00",
-      "summary": "(서울=연합뉴스) 서한기 기자 = 직장인 김모씨는 4월 월급명세서를 보고 깜짝 놀랐다. 평소보다 20만원 넘는 돈이 건강보험료로 더 빠져나갔기 ...",
-      "content": "직장인 김모씨는 4월 월급명세서를 보고 깜짝 놀랐다.\n25일 국민건강보험공단에 따르면 직장가입자 1천671만명을 대상으로 2025년도 보수 변동 명세를 반영한 연말정산을 실시했다.\n정산결과 전체의 62%인 1천35만명이 보수가 오른 만큼 보험료를 덜 냈던 것으로 나타나 1인당 평균 21만8천574원을 추가로 납부하게 됐다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/cms/2021/04/06/84/PCM20210406000084990_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-24T22:31:13.688594",
-      "status": "passed",
-      "evaluated_at": "2026-04-24T23:00:48.619263",
-      "score": 78,
-      "filter_reason": "키워드: 건강보험 | 금액/혜택 명시"
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156757450&call_from=rsslink",
