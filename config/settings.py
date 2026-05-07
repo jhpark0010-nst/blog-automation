@@ -101,4 +101,4 @@ EVAL_BATCH_SIZE = 30  # 1회 처리 최대 건수
 # 모바일 가독성도 1500~2000자가 적정 → 기준 현실화.
 WRITER_TARGET_WORD_COUNT_MIN = 400  # 어절
 WRITER_TARGET_WORD_COUNT_MAX = 700  # 어절
-WRITER_ARTICLES_PER_RUN = 1  # 1회 실행당 1건 (사용자 지시)
+WRITER_ARTICLES_PER_RUN = 2  # 1회 실행당 2건 (intra-batch + Claude semantic dedup 으로 중복 방지)
