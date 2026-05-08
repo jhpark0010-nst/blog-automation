@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T00:01:25.520089",
+  "last_updated": "2026-05-08T00:02:10.601295",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -1717,23 +1717,6 @@
       "evaluated_at": "2026-04-23T01:04:35.898270",
       "score": 76,
       "filter_reason": "키워드: 이자, 세금, 공제"
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260421162000546",
-      "source": "연합뉴스_사회",
-      "title": "[시간들] 의사 알츠하이머의 현미경에 갇힌 120년",
-      "link": "https://www.yna.co.kr/view/AKR20260421162000546",
-      "published": "2026-04-23T07:30:01+09:00",
-      "summary": "(서울=연합뉴스) 김재현 선임기자 = 1906년 4월, 독일 프랑크푸르트 병원에서 일하던 정신과 의사 알로이스 알츠하이머는 사망한 여성 환자의 ...",
-      "content": "1906년 4월, 독일 프랑크푸르트 병원에서 일하던 정신과 의사 알로이스 알츠하이머는 사망한 여성 환자의 뇌를 해부했다.\n국가 주도의 유전자 정화 계획인 T4 작전 아래 지적 장애인과 정신질환자, 유대인의 뇌 수천개가 연구 재료로 이용됐다.\n무고한 희생 위에서 얻은 데이터가 치매 연구의 기초로 활용되는 동안 알츠하이머가 관찰한 아밀로이드 가설은 치매 원인으로 자리 잡았다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/21/AKR20260421162000546_02_i_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-22T23:00:57.756960",
-      "status": "passed",
-      "evaluated_at": "2026-04-23T01:04:35.898276",
-      "score": 78,
-      "filter_reason": "키워드: 병원"
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156757223&call_from=rsslink",
