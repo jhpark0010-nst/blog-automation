@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T00:01:19.517685",
+  "last_updated": "2026-05-12T00:02:03.844622",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -17,23 +17,6 @@
       "status": "passed",
       "evaluated_at": "2026-04-18T12:20:00",
       "score": 71
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417120600004",
-      "source": "연합뉴스_사회",
-      "title": "동작구, 저소득 청년 국민연금 최초가입 지원…\"지자체 최초\"",
-      "link": "https://www.yna.co.kr/view/AKR20260417120600004",
-      "published": "2026-04-17T16:05:40+09:00",
-      "summary": "(서울=연합뉴스) 정준영 기자 = 동작구(구청장 박일하)는 지방자치단체 최초로 '저소득 청년 국민연금 임의가입 보험료 지원사업'을 벌인다고 17...",
-      "content": "동작구는 지방자치단체 최초로 '저소득 청년 국민연금 임의가입 보험료 지원사업'을 벌인다고 17일 밝혔다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/17/AKR20260417120600004_01_i_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-17T09:02:21.558640",
-      "filter_reason": "키워드: 연금",
-      "status": "passed",
-      "evaluated_at": "2026-04-18T14:25:37",
-      "score": 73
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417126100062",
