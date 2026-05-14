@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T09:00:47.273706",
+  "last_updated": "2026-05-14T10:01:39.617267",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -2057,23 +2057,6 @@
       "evaluated_at": "2026-05-07T05:00:47.008844",
       "score": 70,
       "filter_reason": "키워드: 신청, 근로"
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260507042700001",
-      "source": "연합뉴스_정치",
-      "title": "정부 중앙부처 상담은 110번으로 전화하세요",
-      "link": "https://www.yna.co.kr/view/AKR20260507042700001",
-      "published": "2026-05-07T09:39:24+09:00",
-      "summary": "(서울=연합뉴스) 이상현 기자 = 중앙행정기관 대표 상담번호가 '110번'(국민콜)으로 순차적으로 통합된다.",
-      "content": "중앙행정기관 대표 상담번호가 '110번'으로 순차적으로 통합된다.\n국민들은 담당 기관과 무관하게 110번으로 전화하면 일반 상담을 받을 수 있으며 필요시 기관별 상담도 연결받을 수 있다.\n다만 개인정보 확인이 필요한 상담이나 각종 신고접수를 비롯한 전문상담 콜센터는 통합 대상에서 제외된다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/05/07/AKR20260507042700001_01_i_P2.jpg",
-      "category": "정치",
-      "priority": 2,
-      "collected_at": "2026-05-07T02:31:36.512272",
-      "status": "passed",
-      "evaluated_at": "2026-05-07T05:00:47.008857",
-      "score": 72,
-      "filter_reason": "키워드: 접수"
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156759973&call_from=rsslink",
