@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T01:00:34.598314",
+  "last_updated": "2026-05-17T02:01:10.086426",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -1462,23 +1462,6 @@
       "evaluated_at": "2026-05-01T05:00:46.215870",
       "score": 70,
       "filter_reason": "키워드: 지원금, 취업 | 금액/혜택 명시"
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260429066300030",
-      "source": "연합뉴스_경제",
-      "title": "농식품부, 스마트팜 청년창업 보육센터 교육생 208명 모집",
-      "link": "https://www.yna.co.kr/view/AKR20260429066300030",
-      "published": "2026-04-29T11:00:02+09:00",
-      "summary": "(서울=연합뉴스) 한주홍 기자 = 농림축산식품부는 '스마트팜 청년창업 보육센터'의 신규 교육생을 모집한다고 29일 밝혔다.",
-      "content": "농림축산식품부는 '스마트팜 청년창업 보육센터'의 신규 교육생을 모집한다고 29일 밝혔다.\n자세한 내용은 스마트팜코리아 홈페이지에서 확인할 수 있다.\n농식품부 관계자는 \"스마트팜은 기술과 농업이 융합된 새로운 창업 분야\"라며 \"스마트농업을 이끌 청년 인재들의 지원을 기다린다\"고 말했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/etc/inner/KR/2026/04/29/AKR20260429066300030_01_i_P2.jpg",
-      "category": "경제",
-      "priority": 2,
-      "collected_at": "2026-04-29T02:31:47.338503",
-      "status": "passed",
-      "evaluated_at": "2026-05-01T11:00:46.981048",
-      "score": 72,
-      "filter_reason": "키워드: 모집"
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156758394&call_from=rsslink",
