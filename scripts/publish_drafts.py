@@ -83,9 +83,16 @@ def publish_to_wp(title: str, content: str, meta_desc: str, slug: str):
     payload = {"title": title, "content": content, "status": "publish", "slug": slug}
     if meta_desc:
         payload["meta"] = {"yoast_wpseo_metadesc": meta_desc}
+    # Cloudways WAF/bot 탐지 우회용 브라우저 UA + 명시적 charset
+    # (apply_review_actions 의 update 가 5/17 부터 415 차단된 케이스와 동일 보강)
     resp = requests.post(
         f"{WP_URL}/wp-json/wp/v2/posts",
-        headers={"Authorization": f"Basic {auth}", "Content-Type": "application/json"},
+        headers={
+            "Authorization": f"Basic {auth}",
+            "Content-Type": "application/json; charset=utf-8",
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+        },
         json=payload,
         timeout=30,
     )

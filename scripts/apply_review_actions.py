@@ -24,9 +24,18 @@ SLACK_WEBHOOK = os.environ.get("SLACK_WEBHOOK_URL", "")
 ACTIONS_PATH = Path("data/review-actions.json")
 
 
+# 2026-05-17 부터 update_post 호출이 Cloudways nginx 단에서 HTTP 415 로 차단됨.
+# WAF / bot 탐지가 기본 python-requests UA 를 의심스럽게 보는 패턴으로 추정.
+# 브라우저 형태 UA + 명시적 Accept 헤더 + charset=utf-8 로 우회.
+_BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "application/json",
+}
+
+
 def auth_header() -> dict:
     token = base64.b64encode(f"{WP_USERNAME}:{WP_APP_PASSWORD}".encode()).decode()
-    return {"Authorization": f"Basic {token}"}
+    return {"Authorization": f"Basic {token}", **_BROWSER_HEADERS}
 
 
 def find_post_id(slug: str) -> int | None:
@@ -44,7 +53,7 @@ def find_post_id(slug: str) -> int | None:
 def update_post(post_id: int, payload: dict) -> dict:
     r = requests.post(
         f"{WP_URL}/wp-json/wp/v2/posts/{post_id}",
-        headers={**auth_header(), "Content-Type": "application/json"},
+        headers={**auth_header(), "Content-Type": "application/json; charset=utf-8"},
         json=payload,
         timeout=30,
     )
