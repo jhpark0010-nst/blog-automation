@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T11:00:51.196365",
+  "last_updated": "2026-05-27T12:02:55.748059",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260417111600065",
@@ -17,23 +17,6 @@
       "status": "passed",
       "evaluated_at": "2026-04-18T12:20:00",
       "score": 71
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260417126100062",
-      "source": "연합뉴스_사회",
-      "title": "강원도, 미분양 아파트 취득세 50% 감면…'도세 감면 조례' 개정",
-      "link": "https://www.yna.co.kr/view/AKR20260417126100062",
-      "published": "2026-04-17T16:51:11+09:00",
-      "summary": "(춘천=연합뉴스) 이재현 기자 = 강원특별자치도는 미분양 아파트 해소와 빈집 문제 해결을 위한 도세 감면 조례 일부 개정안을 17일 공포·시행한...",
-      "content": "강원특별자치도는 미분양 아파트 해소와 빈집 문제 해결을 위한 도세 감면 조례 일부 개정안을 17일 공포·시행한다고 밝혔다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/cms/2025/02/04/84/PCM20250204000084990_P2.jpg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-04-17T09:02:07.842128",
-      "filter_reason": "키워드: 감면 | 금액/혜택 명시",
-      "status": "passed",
-      "evaluated_at": "2026-04-18T14:25:37",
-      "score": 72
     },
     {
       "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156756287&call_from=rsslink",
