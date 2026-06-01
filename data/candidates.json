@@ -1,4 +1,22 @@
 {
-  "last_updated": "2026-06-01T09:00:55.601164",
-  "items": []
+  "last_updated": "2026-06-01T11:00:51.989288",
+  "items": [
+    {
+      "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764736&call_from=rsslink",
+      "source": "정책브리핑_보도자료",
+      "title": "[법무부]농어촌 외국인 숙련인력 고용 한도 50%로 확대… 외국인 노동자 '부당 이직' 시 이전 경력도 인정",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156764736&call_from=rsslink",
+      "published": "Mon, 01 Jun 2026 05:29:59 GMT",
+      "summary": "농어촌 외국인 숙련인력 고용 한도 50%로 확대…외국인 노동자 '부당 이직' 시 이전 경력도 인정- 법무부, 6월부터 숙련기능인력(E-7-4) 취업비자 제도 개선- 인력난을 겪는 농축어업에 더 많은 외국인 숙련인력 고용 허용- 불가피하게 이직한 외국인 근로자의 이전 직장 근무 기간까지 근무 경력으로 인정오는 6월부터 농어촌 지역의 외국인 숙련기능인력(E-7-4) 고용 허용 한도가 기존 30%에서 최대 50%까지 대폭 확대됩니다. 또한, 임금체불이나 폭행 등 부당한 처우로 인해 불가피하게 직장을 옮긴 외국인 근로자도 이전 근무 경력을 그대로 인정받아 비자를 변경하거나 연장할 수 있게 바뀝니다.[※ 상세내용 첨부파일 참조][자료제공 :(www.korea.kr)]",
+      "content": "",
+      "thumbnail_url": "https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif",
+      "category": "정책",
+      "priority": 1,
+      "collected_at": "2026-06-01T10:30:40.753624",
+      "status": "passed",
+      "evaluated_at": "2026-06-01T11:00:51.987026",
+      "score": 72,
+      "filter_reason": "키워드: 취업, 근로 | 금액/혜택 명시"
+    }
+  ]
 }
