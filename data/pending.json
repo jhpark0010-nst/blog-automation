@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T11:01:03.424073",
+  "last_updated": "2026-06-18T12:32:07.906328",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260615074500001",
@@ -1768,6 +1768,23 @@
       "evaluated_at": null,
       "score": null,
       "filter_reason": "기본 통과"
+    },
+    {
+      "guid": "https://www.yna.co.kr/view/AKR20260618168951530",
+      "source": "연합뉴스_사회",
+      "title": "최저임금 내년도 업종별 구분 없이 단일 적용…표결서 부결(종합)",
+      "link": "https://www.yna.co.kr/view/AKR20260618168951530",
+      "published": "2026-06-18T21:02:04+09:00",
+      "summary": "(세종=연합뉴스) 옥성구 기자 = 내년에도 최저임금이 업종별 구분 없이 똑같이 적용된다.",
+      "content": "내년에도 최저임금이 업종별 구분 없이 똑같이 적용된다.\n사용자 측은 해당 업종의 최저임금 인상률을 일반 인상률의 2분의 1로 적용하되, 업종 간 격차는 최대 10% 이내로 제한하자고 제안했다.\n그러나 근로자 측은 특정 업종에 더 낮은 최저임금을 적용하는 건 노동자 차별을 제도화하는 발상이라고 반대했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
+      "thumbnail_url": "https://img.yna.co.kr/photo/yna/YH/2026/06/18/PYH2026061816130001300_P2.jpg",
+      "category": "사회",
+      "priority": 2,
+      "collected_at": "2026-06-18T12:31:54.260632",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 근로, 최저임금 | 금액/혜택 명시"
     }
   ]
 }
