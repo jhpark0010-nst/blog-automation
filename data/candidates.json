@@ -1,4 +1,39 @@
 {
-  "last_updated": "2026-06-18T10:02:27.577945",
-  "items": []
+  "last_updated": "2026-06-18T11:01:03.427220",
+  "items": [
+    {
+      "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156767090&call_from=rsslink",
+      "source": "정책브리핑_보도자료",
+      "title": "[국세청]창업에만 집중하세요... 국세청, &#xff62;스타트업 세금든든케어&#xff63;로 청년 사장님을 지원합니다.",
+      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156767090&call_from=rsslink",
+      "published": "Thu, 18 Jun 2026 05:15:00 GMT",
+      "summary": "창업에만 집중하세요... 국세청, ｢스타트업 세금든든케어｣로 청년 사장님을 지원합니다. 관련 보도자료 내용입니다.[자료제공 :(www.korea.kr)]",
+      "content": "",
+      "thumbnail_url": "https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif",
+      "category": "정책",
+      "priority": 1,
+      "collected_at": "2026-06-18T08:31:14.198403",
+      "status": "passed",
+      "evaluated_at": "2026-06-18T11:01:03.424060",
+      "score": 70,
+      "filter_reason": "키워드: 세금"
+    },
+    {
+      "guid": "https://www.yna.co.kr/view/AKR20260618164500002",
+      "source": "연합뉴스_경제",
+      "title": "지방 주담대 '3단계 스트레스 DSR' 연말까지 또 유예",
+      "link": "https://www.yna.co.kr/view/AKR20260618164500002",
+      "published": "2026-06-18T19:14:10+09:00",
+      "summary": "(서울=연합뉴스) 김지연 기자 = 금융당국이 당초 이달 종료 예정이었던 지방 주택담보대출에 대한 '2단계 스트레스 총부채원리금상환비율(DSR)'...",
+      "content": "금융당국이 당초 이달 종료 예정이었던 지방 주택담보대출에 대한 '2단계 스트레스 총부채원리금상환비율' 적용을 연말까지로 또 연장했다.\n금융위원회는 18일 지방 주택시장 경기 활성화를 고려해 현행 '3단계 스트레스 DSR 제도'의 적용 기간 등을 연장하는 행정지도를 예고했다고 밝혔다.\n금융위는 지난해 7월 3단계 스트레스 DSR을 도입하며 지방 주택담보대출에는 작년 말까지 적용을 유예했다가 이후 다시 올 상반기까지로 연장했다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
+      "thumbnail_url": "https://img.yna.co.kr/photo/cms/2021/04/14/70/PCM20210414000070990_P2.jpg",
+      "category": "경제",
+      "priority": 2,
+      "collected_at": "2026-06-18T10:31:55.735766",
+      "status": "passed",
+      "evaluated_at": "2026-06-18T11:01:03.424070",
+      "score": 72,
+      "filter_reason": "키워드: 대출"
+    }
+  ]
 }
