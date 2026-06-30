@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T23:01:10.980477",
+  "last_updated": "2026-06-30T00:01:54.240304",
   "items": [
     {
       "guid": "https://www.korea.kr/news/policyNewsView.do?newsId=148967277&call_from=rsslink",
@@ -34,23 +34,6 @@
       "evaluated_at": "2026-06-29T23:01:10.978494",
       "score": 78,
       "filter_reason": "키워드: 급여, 신청, 연금"
-    },
-    {
-      "guid": "https://www.yna.co.kr/view/AKR20260629163600530",
-      "source": "연합뉴스_사회",
-      "title": "내달부터 '췌장장애'도 국가 인정받는다…입시생은 우선 심사",
-      "link": "https://www.yna.co.kr/view/AKR20260629163600530",
-      "published": "2026-06-30T06:00:02+09:00",
-      "summary": "(서울=연합뉴스) 성서호 기자 = 내달부터 '췌장 장애'도 장애인으로 정식 등록해 각종 혜택을 받게 된다.",
-      "content": "내달부터 '췌장 장애'도 장애인으로 정식 등록해 각종 혜택을 받게 된다.\n췌장 장애의 원인 질환이 1형 당뇨병인지, 2형 당뇨병인지와 관계 없이 장애 정도 판정 기준 고시에서 정하는 진단 요건을 충족하면 장애인 등록을 할 수 있다.\n등록된 췌장 장애인은 공공시설 이용료, 전기·통신 요금, 공과금 감면과 각종 세제 혜택을 받게 된다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
-      "thumbnail_url": "https://img.yna.co.kr/photo/cms/2018/06/01/17/C0A8CA3C00000163B91A4B6100123CB5_P2.jpeg",
-      "category": "사회",
-      "priority": 2,
-      "collected_at": "2026-06-29T22:31:52.032422",
-      "status": "passed",
-      "evaluated_at": "2026-06-29T23:01:10.978505",
-      "score": 88,
-      "filter_reason": "키워드: 감면 | 금액/혜택 명시"
     }
   ]
 }
