@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T09:01:12.598216",
+  "last_updated": "2026-07-01T10:01:50.778469",
   "items": [
     {
       "guid": "https://www.yna.co.kr/view/AKR20260629148800530",
@@ -68,23 +68,6 @@
       "evaluated_at": "2026-07-01T01:01:11.766427",
       "score": 70,
       "filter_reason": "키워드: 근로, 고용보험 | 금액/혜택 명시"
-    },
-    {
-      "guid": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156769134&call_from=rsslink",
-      "source": "정책브리핑_보도자료",
-      "title": "[외교부]한-호주 워킹홀리데이 참여 연령 상한 30세에서 35세로 확대",
-      "link": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156769134&call_from=rsslink",
-      "published": "Wed, 01 Jul 2026 06:23:00 GMT",
-      "summary": "호주 정부는 2026.7.1.부터 우리 국민 대상 워킹홀리데이 참여 연령 상한을 기존 30세에서 35세로 확대한다고 밝혔다.그간 우리 정부는 호주 측에 한-호주 워킹홀리데이 참여 연령 상한 확대를 지속 제안해 왔으며, 호주 측은 우리 측 제안을 수용하여 오늘부터 이와 같이 시행한다고 알려왔다.호주는 1995년 우리나라가 최초로 워킹홀리데이 프로그램 양해각서를 체결한 국가이며, 연간 우리 국민 워킹홀리데이 참여자 수가 가장 많은 국가이다. 이번 호주 워킹홀리데이 참여 연령 상한 확대를 계기로 우리 청년들의 해외 진출 기회도 더욱 확대될 것으로 기대된다.우리나라는 호주를 포함하여 29개 국가․지역과 워킹홀리데이 협정 또는 양해각서를 체결했으며, 외교부는 앞으로도 청년 해외 진출 확대를 위해 여타 국가들과 워킹홀리데이 협정 체결을 지속 추진해 나갈 계획이다.  끝.[자료제공 :(www.korea.kr)]",
-      "content": "",
-      "thumbnail_url": "https://www.korea.kr/newsWeb/resources/rss/btn_textview.gif",
-      "category": "정책",
-      "priority": 1,
-      "collected_at": "2026-07-01T08:30:45.396326",
-      "status": "passed",
-      "evaluated_at": "2026-07-01T09:01:12.592596",
-      "score": 82,
-      "filter_reason": "기본 통과"
     },
     {
       "guid": "https://www.yna.co.kr/view/AKR20260701141400063",
