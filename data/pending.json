@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T10:32:07.060933",
+  "last_updated": "2026-08-23T12:30:57.034365",
   "items": [
     {
       "guid": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95092318&src=text&kw=000004",
@@ -4522,6 +4522,23 @@
       "evaluated_at": null,
       "score": null,
       "filter_reason": "키워드: 이자"
+    },
+    {
+      "guid": "https://www.yna.co.kr/view/AKR20260823049700054",
+      "source": "연합뉴스_사회",
+      "title": "광주 송정동서 버스·승용차 충돌…인명피해 없어",
+      "link": "https://www.yna.co.kr/view/AKR20260823049700054",
+      "published": "2026-08-23T21:09:13+09:00",
+      "summary": "(전남광주=연합뉴스) 민현기 기자 = 23일 오후 6시 7분께 전남광주 광산구 송정동 한 교차로에서 주행 중이던 승용차가 시내버스 측면을 들이받...",
+      "content": "23일 오후 6시 7분께 전남광주 광산구 송정동 한 교차로에서 주행 중이던 승용차가 시내버스 측면을 들이받았다.\n충돌 직후 승용차 전면부에서 불이 나자 이를 목격한 인근 식당 업주는 가게 내에 있던 소화기로 불을 끄고 승용차 운전자를 밖으로 대피시켰다.\n버스에 타고 있던 승객 7명은 별다른 부상 없이 후속 버스를 타고 귀가했으며, 승용차와 버스 운전자도 크게 다치지 않아 병원으로 이송되지 않은 것으로 파악됐다.\n인공지능이 자동으로 줄인 '세 줄 요약' 기술을 사용합니다.\n전체 내용을 이해하기 위해서는 기사 본문과 함께 읽어야 합니다.",
+      "thumbnail_url": "https://img.yna.co.kr/photo/yna/YH/2026/08/23/PYH2026082307080005400_P2.jpg",
+      "category": "사회",
+      "priority": 2,
+      "collected_at": "2026-08-23T12:30:53.613630",
+      "status": "unreviewed",
+      "evaluated_at": null,
+      "score": null,
+      "filter_reason": "키워드: 병원"
     }
   ]
 }
